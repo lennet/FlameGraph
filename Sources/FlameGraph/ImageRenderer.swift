@@ -2,14 +2,17 @@ import Cocoa
 
 class ImageRenderer {
     class func render(graph: CallGraphNode) -> NSImage {
-        return NSImage(size: NSSize(width: 1000, height: 1000), flipped: false) { (rect) -> Bool in
+        let maxDepth = CGFloat(graph.maxDepth)
+        let cellHeight: CGFloat = 40
+        return NSImage(size: NSSize(width: 1000, height: maxDepth * cellHeight), flipped: false) { (rect) -> Bool in
             let context = NSGraphicsContext.current!.cgContext
-            render(nodes: graph.subNodes, context: context, totalWidth: rect.width, y: 0, x: 0, maxPercentage: graph.symbol.percentage)
+
+            renderLayer(nodes: graph.subNodes, context: context, totalWidth: rect.width, y: 0, x: 0, maxPercentage: graph.symbol.percentage, height: cellHeight)
             return true
         }
     }
 
-    private class func render(nodes: [CallGraphNode], context: CGContext, totalWidth: CGFloat, y: CGFloat, x: CGFloat, maxPercentage: Float) {
+    private class func renderLayer(nodes: [CallGraphNode], context: CGContext, totalWidth: CGFloat, y: CGFloat, x: CGFloat, maxPercentage: Float, height: CGFloat) {
         let colors: [NSColor] = [
             #colorLiteral(red: 0.1921568662, green: 0.007843137719, blue: 0.09019608051, alpha: 1),
             #colorLiteral(red: 0.3176470697, green: 0.07450980693, blue: 0.02745098062, alpha: 1),
@@ -22,8 +25,7 @@ class ImageRenderer {
         ]
 
         let xSpacing: CGFloat = 1
-        let height: CGFloat = 40
-        let ySpacing: CGFloat = 2
+        let ySpacing: CGFloat = 1
         var currentX: CGFloat = x
         for node in nodes {
             let currentWidth = max(totalWidth * CGFloat(node.symbol.percentage / maxPercentage), 2)
@@ -32,7 +34,7 @@ class ImageRenderer {
             context.fill(rect)
 
             NSString(string: "\(node.symbol.name), \(node.symbol.weight)").draw(in: rect, withAttributes: [.foregroundColor: NSColor.white])
-            render(nodes: node.subNodes, context: context, totalWidth: currentWidth, y: y + height + ySpacing, x: currentX, maxPercentage: maxPercentage)
+            renderLayer(nodes: node.subNodes, context: context, totalWidth: currentWidth, y: y + height + ySpacing, x: currentX, maxPercentage: maxPercentage, height: height)
             currentX = rect.maxX + xSpacing
         }
     }

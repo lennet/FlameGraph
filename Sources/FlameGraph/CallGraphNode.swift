@@ -9,3 +9,13 @@ class CallGraphNode {
         self.symbol = symbol
     }
 }
+
+extension CallGraphNode {
+    var maxDepth: Int {
+        var result = symbol.depthLevel
+        for node in subNodes {
+            result = max(node.maxDepth, result)
+        }
+        return result
+    }
+}
