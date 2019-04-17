@@ -31,7 +31,7 @@ class ImageRenderer {
             colors.randomElement()?.setFill()
             context.fill(rect)
 
-            NSString(string: node.symbol.name).draw(in: rect, withAttributes: [.foregroundColor: NSColor.white])
+            NSString(string: "\(node.symbol.name), \(node.symbol.weight)").draw(in: rect, withAttributes: [.foregroundColor: NSColor.white])
             render(nodes: node.subNodes, context: context, totalWidth: currentWidth, y: y + height + ySpacing, x: currentX, maxPercentage: maxPercentage)
             currentX = rect.maxX + xSpacing
         }
