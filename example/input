@@ -1,0 +1,912 @@
+Weight	Self Weight		Symbol Name
+92.00 ms    7.8%	0 s	 	-[UIApplication _handleDelegateCallbacksWithOptions:isSuspended:restoreState:]
+92.00 ms    7.8%	0 s	 	 -[AppDelegate application:didFinishLaunchingWithOptions:]
+71.00 ms    6.0%	0 s	 	  -[UITabBarController initWithNibName:bundle:]
+68.00 ms    5.8%	0 s	 	   -[WMFAppViewController viewDidLoad]
+56.00 ms    4.7%	0 s	 	    -[WMFAppViewController setupReadingListsHelpers]
+56.00 ms    4.7%	0 s	 	     -[WMFAppViewController dataStore]
+56.00 ms    4.7%	0 s	 	      +[SessionSingleton sharedInstance]
+56.00 ms    4.7%	0 s	 	       _dispatch_once_callout
+56.00 ms    4.7%	0 s	 	        _dispatch_client_callout
+56.00 ms    4.7%	0 s	 	         __34+[SessionSingleton sharedInstance]_block_invoke
+56.00 ms    4.7%	0 s	 	          -[SessionSingleton init]
+53.00 ms    4.5%	0 s	 	           -[MWKDataStore init]
+53.00 ms    4.5%	0 s	 	            -[MWKDataStore initWithContainerURL:]
+25.00 ms    2.1%	0 s	 	             -[MWKDataStore setupCoreDataStackWithContainerURL:]
+20.00 ms    1.7%	0 s	 	              -[NSPersistentStoreCoordinator addPersistentStoreWithType:configuration:URL:options:error:]
+20.00 ms    1.7%	0 s	 	               _perform
+20.00 ms    1.7%	0 s	 	                _dispatch_lane_barrier_sync_invoke_and_complete
+20.00 ms    1.7%	0 s	 	                 _dispatch_client_callout
+20.00 ms    1.7%	0 s	 	                  gutsOfBlockToNSPersistentStoreCoordinatorPerform
+20.00 ms    1.7%	0 s	 	                   __91-[NSPersistentStoreCoordinator addPersistentStoreWithType:configuration:URL:options:error:]_block_invoke
+12.00 ms    1.0%	0 s	 	                    -[NSSQLCore loadMetadata:]
+12.00 ms    1.0%	0 s	 	                     -[NSSQLCore _loadAndSetMetadata]
+11.00 ms    0.9%	0 s	 	                      -[NSSQLiteConnection performAndWait:]
+11.00 ms    0.9%	0 s	 	                       _dispatch_lane_barrier_sync_invoke_and_complete
+11.00 ms    0.9%	0 s	 	                        _dispatch_client_callout
+11.00 ms    0.9%	0 s	 	                         __37-[NSSQLiteConnection performAndWait:]_block_invoke
+11.00 ms    0.9%	0 s	 	                          __32-[NSSQLCore _loadAndSetMetadata]_block_invoke
+10.00 ms    0.8%	0 s	 	                           -[NSSQLiteConnection connect]
+9.00 ms    0.7%	0 s	 	                            -[NSSQLiteConnection createSchema]
+4.00 ms    0.3%	0 s	 	                             -[NSSQLiteConnection saveCachedModel:]
+4.00 ms    0.3%	0 s	 	                              -[NSSQLiteConnection _compressedDataWithModel:]
+3.00 ms    0.2%	0 s	 	                               +[NSKeyedArchiver archivedDataWithRootObject:requiringSecureCoding:error:]
+2.00 ms    0.1%	0 s	 	                                _encodeObject
+2.00 ms    0.1%	0 s	 	                                 -[NSManagedObjectModel encodeWithCoder:]
+2.00 ms    0.1%	0 s	 	                                  _encodeObject
+2.00 ms    0.1%	0 s	 	                                   -[NSKnownKeysDictionary1 encodeWithCoder:]
+2.00 ms    0.1%	0 s	 	                                    _encodeObject
+2.00 ms    0.1%	0 s	 	                                     -[NSKeyedArchiver _encodeArrayOfObjects:forKey:]
+2.00 ms    0.1%	0 s	 	                                      _encodeObject
+2.00 ms    0.1%	0 s	 	                                       -[NSEntityDescription encodeWithCoder:]
+2.00 ms    0.1%	0 s	 	                                        _encodeObject
+2.00 ms    0.1%	0 s	 	                                         -[NSDictionary(NSDictionary) encodeWithCoder:]
+2.00 ms    0.1%	0 s	 	                                          -[NSKeyedArchiver _encodeArrayOfObjects:forKey:]
+2.00 ms    0.1%	0 s	 	                                           _encodeObject
+1.00 ms    0.0%	0 s	 	                                            -[NSCoder validateClassSupportsSecureCoding:]
+1.00 ms    0.0%	0 s	 	                                             +[NSObject conformsToProtocol:]
+1.00 ms    0.0%	0 s	 	                                              class_conformsToProtocol
+1.00 ms    0.0%	0 s	 	                                               getProtocol(char const*)
+1.00 ms    0.0%	0 s	 	                                                NXMapGet
+1.00 ms    0.0%	1.00 ms	 	                                                 _mapStrIsEqual(_NXMapTable*, void const*, void const*)
+1.00 ms    0.0%	0 s	 	                                            -[NSAttributeDescription encodeWithCoder:]
+1.00 ms    0.0%	0 s	 	                                             _encodeObject
+1.00 ms    0.0%	0 s	 	                                              -[NSCoder validateClassSupportsSecureCoding:]
+1.00 ms    0.0%	0 s	 	                                               +[NSObject conformsToProtocol:]
+1.00 ms    0.0%	0 s	 	                                                class_conformsToProtocol
+1.00 ms    0.0%	0 s	 	                                                 getProtocol(char const*)
+1.00 ms    0.0%	0 s	 	                                                  NXMapGet
+1.00 ms    0.0%	1.00 ms	 	                                                   _mapStrHash(_NXMapTable*, void const*)
+1.00 ms    0.0%	0 s	 	                                -[NSKeyedArchiver encodedData]
+1.00 ms    0.0%	0 s	 	                                 -[NSKeyedArchiver finishEncoding]
+1.00 ms    0.0%	0 s	 	                                  __CFBinaryPlistWriteOrPresize
+1.00 ms    0.0%	0 s	 	                                   _flattenPlist
+1.00 ms    0.0%	0 s	 	                                    _flattenPlist
+1.00 ms    0.0%	0 s	 	                                     _flattenPlist
+1.00 ms    0.0%	0 s	 	                                      _flattenPlist
+1.00 ms    0.0%	1.00 ms	 	                                       CFBasicHashAddValue
+1.00 ms    0.0%	0 s	 	                               zlib_encode_stream_process
+1.00 ms    0.0%	0 s	 	                                deflate
+1.00 ms    0.0%	0 s	 	                                 deflate_slow
+1.00 ms    0.0%	0 s	 	                                  _tr_flush_block
+1.00 ms    0.0%	1.00 ms	 	                                   compress_block
+3.00 ms    0.2%	0 s	 	                             -[NSSQLiteConnection createTablesForEntities:]
+2.00 ms    0.1%	0 s	 	                              -[NSSQLiteConnection createIndexesForEntity:]
+2.00 ms    0.1%	0 s	 	                               -[NSSQLiteConnection prepareAndExecuteSQLStatement:]
+1.00 ms    0.0%	0 s	 	                                -[NSSQLiteConnection execute]
+1.00 ms    0.0%	0 s	 	                                 _execute
+1.00 ms    0.0%	0 s	 	                                  sqlite3_step
+1.00 ms    0.0%	0 s	 	                                   sqlite3VdbeExec
+1.00 ms    0.0%	0 s	 	                                    sqlite3_exec
+1.00 ms    0.0%	1.00 ms	 	                                     sqlite3_step
+1.00 ms    0.0%	0 s	 	                                -[NSSQLiteConnection releaseSQLStatement]
+1.00 ms    0.0%	0 s	 	                                 -[NSSQLiteConnection _finalizeStatement]
+1.00 ms    0.0%	0 s	 	                                  sqlite3_finalize
+1.00 ms    0.0%	0 s	 	                                   sqlite3VdbeClearObject
+1.00 ms    0.0%	1.00 ms	 	                                    nanov2_free_to_block
+1.00 ms    0.0%	0 s	 	                              -[NSSQLiteConnection createManyToManyTablesForEntity:]
+1.00 ms    0.0%	0 s	 	                               -[NSSQLiteConnection prepareAndExecuteSQLStatement:]
+1.00 ms    0.0%	0 s	 	                                -[NSSQLiteConnection prepareSQLStatement:]
+1.00 ms    0.0%	0 s	 	                                 sqlite3_prepare_v3
+1.00 ms    0.0%	0 s	 	                                  sqlite3LockAndPrepare
+1.00 ms    0.0%	0 s	 	                                   sqlite3RunParser
+1.00 ms    0.0%	0 s	 	                                    yy_reduce
+1.00 ms    0.0%	0 s	 	                                     sqlite3AddPrimaryKey
+1.00 ms    0.0%	0 s	 	                                      sqlite3CreateIndex
+1.00 ms    0.0%	0 s	 	                                       sqlite3NestedParse
+1.00 ms    0.0%	1.00 ms	 	                                        sqlite3RunParser
+1.00 ms    0.0%	0 s	 	                             -[NSSQLiteConnection didCreateSchema]
+1.00 ms    0.0%	0 s	 	                              -[NSSQLiteConnection prepareAndExecuteSQLStatement:]
+1.00 ms    0.0%	0 s	 	                               -[NSSQLiteConnection execute]
+1.00 ms    0.0%	0 s	 	                                _execute
+1.00 ms    0.0%	0 s	 	                                 sqlite3_step
+1.00 ms    0.0%	0 s	 	                                  sqlite3VdbeExec
+1.00 ms    0.0%	0 s	 	                                   pager_write
+1.00 ms    0.0%	0 s	 	                                    unixOpen
+1.00 ms    0.0%	0 s	 	                                     robust_open2
+1.00 ms    0.0%	0 s	 	                                      guarded_open_np
+1.00 ms    0.0%	1.00 ms	 	                                       __guarded_open_np
+1.00 ms    0.0%	0 s	 	                             -[NSSQLiteConnection commitTransaction]
+1.00 ms    0.0%	0 s	 	                              _execute
+1.00 ms    0.0%	0 s	 	                               sqlite3_step
+1.00 ms    0.0%	0 s	 	                                sqlite3VdbeExec
+1.00 ms    0.0%	0 s	 	                                 sqlite3VdbeHalt
+1.00 ms    0.0%	0 s	 	                                  sqlite3BtreeCommitPhaseOne
+1.00 ms    0.0%	0 s	 	                                   sqlite3PagerCommitPhaseOne
+1.00 ms    0.0%	0 s	 	                                    pager_write_pagelist
+1.00 ms    0.0%	0 s	 	                                     unixWrite
+1.00 ms    0.0%	1.00 ms	 	                                      pwrite
+1.00 ms    0.0%	0 s	 	                            +[NSSQLiteConnection openAtPath:withKey:handle:flags:module:checkpointOnClose:]
+1.00 ms    0.0%	0 s	 	                             openDatabase
+1.00 ms    0.0%	0 s	 	                              __private_getcwd
+1.00 ms    0.0%	0 s	 	                               __getcwd
+1.00 ms    0.0%	1.00 ms	 	                                __open_nocancel
+1.00 ms    0.0%	0 s	 	                           -[NSSQLiteConnection fetchMetadata]
+1.00 ms    0.0%	0 s	 	                            -[NSSQLiteConnection execute]
+1.00 ms    0.0%	0 s	 	                             _execute
+1.00 ms    0.0%	0 s	 	                              sqlite3_step
+1.00 ms    0.0%	0 s	 	                               sqlite3VdbeExec
+1.00 ms    0.0%	0 s	 	                                sqlite3BtreeBeginTrans
+1.00 ms    0.0%	0 s	 	                                 sqlite3PagerSharedLock
+1.00 ms    0.0%	0 s	 	                                  walTryBeginRead
+1.00 ms    0.0%	0 s	 	                                   walIndexReadHdr
+1.00 ms    0.0%	0 s	 	                                    walIndexPageRealloc
+1.00 ms    0.0%	0 s	 	                                     unixShmMap
+1.00 ms    0.0%	1.00 ms	 	                                      pwrite
+1.00 ms    0.0%	0 s	 	                      -[NSSQLCore schemaValidationConnection]
+1.00 ms    0.0%	0 s	 	                       _objc_msgSend_uncached
+1.00 ms    0.0%	0 s	 	                        lookUpImpOrForward
+1.00 ms    0.0%	0 s	 	                         initializeAndMaybeRelock(objc_class*, objc_object*, mutex_tt<false>&, bool)
+1.00 ms    0.0%	0 s	 	                          realizeClassMaybeSwiftMaybeRelock(objc_class*, mutex_tt<false>&, bool)
+1.00 ms    0.0%	0 s	 	                           realizeClassWithoutSwift(objc_class*)
+1.00 ms    0.0%	0 s	 	                            prepareMethodLists(objc_class*, method_list_t**, int, bool, bool)
+1.00 ms    0.0%	0 s	 	                             fixupMethodList(method_list_t*, bool, bool)
+1.00 ms    0.0%	0 s	 	                              __sel_registerName(char const*, bool, bool)
+1.00 ms    0.0%	0 s	 	                               NXMapGet
+1.00 ms    0.0%	1.00 ms	 	                                _NXMapMember(_NXMapTable*, void const*, void**)
+7.00 ms    0.5%	0 s	 	                    +[NSPersistentStoreCoordinator(_NSInternalMethods) _beginPowerAssertionWithAssert:]
+7.00 ms    0.5%	0 s	 	                     -[UIApplication __beginBackgroundTaskWithExpirationHandler:]
+5.00 ms    0.4%	0 s	 	                      dladdr
+5.00 ms    0.4%	0 s	 	                       0x10556c670
+2.00 ms    0.1%	2.00 ms	 	                        0x1055766f5
+2.00 ms    0.1%	2.00 ms	 	                        0x10557675f
+1.00 ms    0.0%	1.00 ms	 	                        0x105576756
+2.00 ms    0.1%	0 s	 	                      _addBackgroundTask
+2.00 ms    0.1%	0 s	 	                       _dispatch_lane_barrier_sync_invoke_and_complete
+2.00 ms    0.1%	0 s	 	                        _dispatch_client_callout
+2.00 ms    0.1%	0 s	 	                         ___addBackgroundTask_block_invoke
+2.00 ms    0.1%	0 s	 	                          _dispatch_once_callout
+2.00 ms    0.1%	0 s	 	                           _dispatch_client_callout
+2.00 ms    0.1%	0 s	 	                            ___applicationHasUnboundedBackgroundTaskAssertions_block_invoke
+2.00 ms    0.1%	0 s	 	                             +[LSBundleProxy bundleProxyForCurrentProcess]
+1.00 ms    0.0%	0 s	 	                              _dispatch_once_callout
+1.00 ms    0.0%	0 s	 	                               _dispatch_client_callout
+1.00 ms    0.0%	0 s	 	                                __45+[LSBundleProxy bundleProxyForCurrentProcess]_block_invoke
+1.00 ms    0.0%	1.00 ms	 	                                 objc_msgSend
+1.00 ms    0.0%	0 s	 	                              _dispatch_lane_barrier_sync_invoke_and_complete
+1.00 ms    0.0%	0 s	 	                               _dispatch_client_callout
+1.00 ms    0.0%	0 s	 	                                __45+[LSBundleProxy bundleProxyForCurrentProcess]_block_invoke_2
+1.00 ms    0.0%	0 s	 	                                 -[_LSQueryContext(QueryResolution) resolveQueries:cachingStrategy:error:]
+1.00 ms    0.0%	0 s	 	                                  -[_LSQueryContext(Internal) _resolveQueries:cachingStrategy:XPCConnection:error:]
+1.00 ms    0.0%	0 s	 	                                   -[_LSLocalQueryResolver _resolveQueries:XPCConnection:error:]
+1.00 ms    0.0%	0 s	 	                                    -[_LSLocalQueryResolver _enumerateResolvedResultsOfQuery:XPCConnection:withBlock:]
+1.00 ms    0.0%	0 s	 	                                     -[_LSCurrentBundleProxyQuery _enumerateWithXPCConnection:block:]
+1.00 ms    0.0%	0 s	 	                                      +[LSBundleProxy bundleProxyForURL:]
+1.00 ms    0.0%	0 s	 	                                       +[LSApplicationProxy applicationProxyWithBundleUnitID:withContext:]
+1.00 ms    0.0%	0 s	 	                                        -[LSApplicationProxy _initWithBundleUnit:context:applicationIdentifier:]
+1.00 ms    0.0%	0 s	 	                                         -[LSBundleProxy _initWithBundleUnit:context:bundleType:bundleID:localizedName:bundleContainerURL:dataContainerURL:resourcesDirectoryURL:iconsDictionary:iconFileNames:version:]
+1.00 ms    0.0%	0 s	 	                                          +[_LSLazyPropertyList(LSDatabaseUnits) lazyPropertyListWithContext:unit:]
+1.00 ms    0.0%	0 s	 	                                           +[_LSLazyPropertyList lazyPropertyListWithPropertyListData:]
+1.00 ms    0.0%	0 s	 	                                            _objc_msgSend_uncached
+1.00 ms    0.0%	0 s	 	                                             lookUpImpOrForward
+1.00 ms    0.0%	1.00 ms	 	                                              search_method_list(method_list_t const*, objc_selector*)
+1.00 ms    0.0%	0 s	 	                    -[NSSQLCore initWithPersistentStoreCoordinator:configurationName:URL:options:]
+1.00 ms    0.0%	0 s	 	                     -[NSSQLModel initWithManagedObjectModel:configurationName:retainHashHack:brokenHashVersion:]
+1.00 ms    0.0%	0 s	 	                      -[NSSQLModel _generateModel:error:]
+1.00 ms    0.0%	0 s	 	                       _objc_msgSend_uncached
+1.00 ms    0.0%	0 s	 	                        lookUpImpOrForward
+1.00 ms    0.0%	0 s	 	                         cache_fill
+1.00 ms    0.0%	1.00 ms	 	                          cache_t::reallocate(unsigned int, unsigned int)
+3.00 ms    0.2%	0 s	 	              -[NSManagedObjectModel(_NSInternalMethods) _initWithContentsOfURL:options:]
+2.00 ms    0.1%	0 s	 	               -[NSKeyedUnarchiver decodeObjectOfClasses:forKey:]
+2.00 ms    0.1%	0 s	 	                -[NSKeyedUnarchiver decodeObjectForKey:]
+2.00 ms    0.1%	0 s	 	                 _decodeObject
+2.00 ms    0.1%	0 s	 	                  _decodeObjectBinary
+2.00 ms    0.1%	0 s	 	                   -[NSManagedObjectModel initWithCoder:]
+2.00 ms    0.1%	0 s	 	                    -[NSKeyedUnarchiver decodeObjectOfClasses:forKey:]
+2.00 ms    0.1%	0 s	 	                     -[NSKeyedUnarchiver decodeObjectForKey:]
+2.00 ms    0.1%	0 s	 	                      _decodeObject
+2.00 ms    0.1%	0 s	 	                       _decodeObjectBinary
+2.00 ms    0.1%	0 s	 	                        -[NSDictionary(NSDictionary) initWithCoder:]
+2.00 ms    0.1%	0 s	 	                         -[NSKeyedUnarchiver _decodeArrayOfObjectsForKey:]
+2.00 ms    0.1%	0 s	 	                          _decodeObjectBinary
+2.00 ms    0.1%	0 s	 	                           -[NSEntityDescription initWithCoder:]
+2.00 ms    0.1%	0 s	 	                            -[NSKeyedUnarchiver decodeObjectOfClasses:forKey:]
+2.00 ms    0.1%	0 s	 	                             -[NSKeyedUnarchiver decodeObjectForKey:]
+2.00 ms    0.1%	0 s	 	                              _decodeObject
+2.00 ms    0.1%	0 s	 	                               _decodeObjectBinary
+2.00 ms    0.1%	0 s	 	                                -[NSDictionary(NSDictionary) initWithCoder:]
+2.00 ms    0.1%	0 s	 	                                 -[NSKeyedUnarchiver _decodeArrayOfObjectsForKey:]
+2.00 ms    0.1%	0 s	 	                                  _decodeObjectBinary
+1.00 ms    0.0%	0 s	 	                                   -[NSRelationshipDescription initWithCoder:]
+1.00 ms    0.0%	1.00 ms	 	                                    -[NSKeyedUnarchiver decodeObjectOfClass:forKey:]
+1.00 ms    0.0%	0 s	 	                                   -[NSAttributeDescription initWithCoder:]
+1.00 ms    0.0%	1.00 ms	 	                                    objc_msgSend
+1.00 ms    0.0%	0 s	 	               -[NSData(NSData) initWithContentsOfFile:]
+1.00 ms    0.0%	0 s	 	                _NSReadBytesFromFileWithExtendedAttributes
+1.00 ms    0.0%	0 s	 	                 _NSReadFromFileDescriptorWithProgress
+1.00 ms    0.0%	1.00 ms	 	                  read
+1.00 ms    0.0%	0 s	 	              -[NSPersistentStoreCoordinator initWithManagedObjectModel:]
+1.00 ms    0.0%	0 s	 	               -[NSManagedObjectModel(_NSInternalMethods) _setIsEditable:optimizationStyle:]
+1.00 ms    0.0%	0 s	 	                -[NSManagedObjectModel(_NSInternalMethods) _createCachesAndOptimizeState]
+1.00 ms    0.0%	0 s	 	                 -[NSEntityDescription(_NSInternalMethods) _createCachesAndOptimizeState]
+1.00 ms    0.0%	0 s	 	                  +[NSKnownKeysDictionary1 initWithObjects:forKeys:count:]
+1.00 ms    0.0%	0 s	 	                   -[NSKnownKeysMappingStrategy1 initForKeys:count:]
+1.00 ms    0.0%	0 s	 	                    -[NSKnownKeysMappingStrategy1 _coreCreationForKeys:count:]
+1.00 ms    0.0%	0 s	 	                     _CFRelease
+1.00 ms    0.0%	1.00 ms	 	                      __CFArrayReleaseValues
+1.00 ms    0.0%	0 s	 	              _objc_rootAlloc
+1.00 ms    0.0%	0 s	 	               class_createInstance
+1.00 ms    0.0%	0 s	 	                calloc
+1.00 ms    0.0%	0 s	 	                 malloc_zone_calloc
+1.00 ms    0.0%	0 s	 	                  nanov2_calloc
+1.00 ms    0.0%	0 s	 	                   nanov2_allocate
+1.00 ms    0.0%	1.00 ms	 	                    _platform_bzero$VARIANT$Haswell
+16.00 ms    1.3%	0 s	 	             +[MWKLanguageLinkController sharedInstance]
+16.00 ms    1.3%	0 s	 	              _dispatch_once_callout
+16.00 ms    1.3%	0 s	 	               _dispatch_client_callout
+16.00 ms    1.3%	0 s	 	                __43+[MWKLanguageLinkController sharedInstance]_block_invoke
+16.00 ms    1.3%	0 s	 	                 -[MWKLanguageLinkController init]
+16.00 ms    1.3%	0 s	 	                  -[MWKLanguageLinkController loadLanguagesFromFile]
+14.00 ms    1.1%	0 s	 	                   @objc NSArray.wmf_map(_:)
+14.00 ms    1.1%	0 s	 	                    specialized Sequence.map<A>(_:)
+14.00 ms    1.1%	0 s	 	                     specialized Sequence.map<A>(_:)
+14.00 ms    1.1%	0 s	 	                      __50-[MWKLanguageLinkController loadLanguagesFromFile]_block_invoke
+13.00 ms    1.1%	0 s	 	                       @objc NSLocale.wmf_localizedLanguageNameForCode(_:)
+13.00 ms    1.1%	0 s	 	                        -[__NSCFLocale displayNameForKey:value:]
+13.00 ms    1.1%	0 s	 	                         CFLocaleCopyDisplayNameForPropertyValue
+11.00 ms    0.9%	0 s	 	                          __CFLocaleLanguageName
+11.00 ms    0.9%	0 s	 	                           uloc_getDisplayLanguage
+11.00 ms    0.9%	0 s	 	                            0x10fb60c6f
+11.00 ms    0.9%	0 s	 	                             uloc_getTableStringWithFallback
+11.00 ms    0.9%	0 s	 	                              ures_getStringByKeyWithFallback
+11.00 ms    0.9%	11.00 ms	 	                               res_getString
+1.00 ms    0.0%	0 s	 	                          CFDictionaryGetValue
+1.00 ms    0.0%	0 s	 	                           CFBasicHashFindBucket
+1.00 ms    0.0%	1.00 ms	 	                            CFEqual
+1.00 ms    0.0%	0 s	 	                          CFStringGetCString
+1.00 ms    0.0%	0 s	 	                           -[NSTaggedPointerString _getCString:maxLength:encoding:]
+1.00 ms    0.0%	1.00 ms	 	                            _platform_memmove$VARIANT$Haswell
+1.00 ms    0.0%	0 s	 	                       _objc_rootAlloc
+1.00 ms    0.0%	0 s	 	                        class_createInstance
+1.00 ms    0.0%	0 s	 	                         calloc
+1.00 ms    0.0%	0 s	 	                          malloc_zone_calloc
+1.00 ms    0.0%	0 s	 	                           nanov2_calloc
+1.00 ms    0.0%	0 s	 	                            nanov2_allocate
+1.00 ms    0.0%	1.00 ms	 	                             _platform_bzero$VARIANT$Haswell
+1.00 ms    0.0%	0 s	 	                   -[MWKLanguageLinkController setAllLanguages:]
+1.00 ms    0.0%	0 s	 	                    @objc NSArray.wmf_reject(_:)
+1.00 ms    0.0%	0 s	 	                     specialized NSArray.wmf_reject(_:)
+1.00 ms    0.0%	0 s	 	                      specialized ContiguousArray._reserveCapacityAssumingUniqueBuffer(oldCount:)
+1.00 ms    0.0%	0 s	 	                       specialized ContiguousArray._copyToNewBuffer(oldCount:)
+1.00 ms    0.0%	0 s	 	                        specialized _ArrayBufferProtocol._forceCreateUniqueMutableBuffer(countForNewBuffer:minNewCapacity:)
+1.00 ms    0.0%	0 s	 	                         specialized _ArrayBufferProtocol._forceCreateUniqueMutableBufferImpl(countForBuffer:minNewCapacity:requiredCapacity:)
+1.00 ms    0.0%	0 s	 	                          _swift_allocObject_(swift::TargetHeapMetadata<swift::InProcess> const*, unsigned long, unsigned long)
+1.00 ms    0.0%	0 s	 	                           swift_slowAlloc
+1.00 ms    0.0%	0 s	 	                            malloc
+1.00 ms    0.0%	0 s	 	                             malloc_zone_malloc
+1.00 ms    0.0%	0 s	 	                              szone_malloc_should_clear
+1.00 ms    0.0%	0 s	 	                               small_malloc_should_clear
+1.00 ms    0.0%	1.00 ms	 	                                small_free_list_add_ptr
+1.00 ms    0.0%	0 s	 	                   -[WMFAssetsFile array]
+1.00 ms    0.0%	0 s	 	                    +[NSJSONSerialization JSONObjectWithData:options:error:]
+1.00 ms    0.0%	0 s	 	                     -[_NSJSONReader parseData:options:]
+1.00 ms    0.0%	0 s	 	                      -[_NSJSONReader parseUTF8JSONData:skipBytes:options:]
+1.00 ms    0.0%	0 s	 	                       newJSONValue
+1.00 ms    0.0%	0 s	 	                        newJSONValue
+1.00 ms    0.0%	0 s	 	                         newJSONValue
+1.00 ms    0.0%	0 s	 	                          newJSONString
+1.00 ms    0.0%	1.00 ms	 	                           -[NSPlaceholderString initWithBytesNoCopy:length:encoding:freeWhenDone:]
+6.00 ms    0.5%	0 s	 	             @objc RemoteNotificationsController.init(session:configuration:)
+6.00 ms    0.5%	0 s	 	              RemoteNotificationsOperationsController.init(session:configuration:)
+6.00 ms    0.5%	0 s	 	               RemoteNotificationsModelController.__allocating_init(_:)
+6.00 ms    0.5%	0 s	 	                RemoteNotificationsModelController.init(_:)
+6.00 ms    0.5%	0 s	 	                 -[NSPersistentContainer loadPersistentStoresWithCompletionHandler:]
+6.00 ms    0.5%	0 s	 	                  -[NSPersistentStoreCoordinator addPersistentStoreWithDescription:completionHandler:]
+6.00 ms    0.5%	0 s	 	                   -[NSPersistentStoreCoordinator _doAddPersistentStoreWithDescription:privateCopy:completionHandler:]
+6.00 ms    0.5%	0 s	 	                    -[NSPersistentStoreCoordinator addPersistentStoreWithType:configuration:URL:options:error:]
+6.00 ms    0.5%	0 s	 	                     _perform
+6.00 ms    0.5%	0 s	 	                      _dispatch_lane_barrier_sync_invoke_and_complete
+6.00 ms    0.5%	0 s	 	                       _dispatch_client_callout
+6.00 ms    0.5%	0 s	 	                        gutsOfBlockToNSPersistentStoreCoordinatorPerform
+6.00 ms    0.5%	0 s	 	                         __91-[NSPersistentStoreCoordinator addPersistentStoreWithType:configuration:URL:options:error:]_block_invoke
+5.00 ms    0.4%	0 s	 	                          -[NSSQLCore loadMetadata:]
+5.00 ms    0.4%	0 s	 	                           -[NSSQLCore _loadAndSetMetadata]
+5.00 ms    0.4%	0 s	 	                            -[NSSQLiteConnection performAndWait:]
+5.00 ms    0.4%	0 s	 	                             _dispatch_lane_barrier_sync_invoke_and_complete
+5.00 ms    0.4%	0 s	 	                              _dispatch_client_callout
+5.00 ms    0.4%	0 s	 	                               __37-[NSSQLiteConnection performAndWait:]_block_invoke
+5.00 ms    0.4%	0 s	 	                                __32-[NSSQLCore _loadAndSetMetadata]_block_invoke
+5.00 ms    0.4%	0 s	 	                                 -[NSSQLiteConnection connect]
+4.00 ms    0.3%	0 s	 	                                  -[NSSQLiteConnection createSchema]
+1.00 ms    0.0%	0 s	 	                                   -[NSSQLiteConnection didCreateSchema]
+1.00 ms    0.0%	0 s	 	                                    -[NSSQLiteConnection prepareAndExecuteSQLStatement:]
+1.00 ms    0.0%	0 s	 	                                     -[NSSQLiteConnection releaseSQLStatement]
+1.00 ms    0.0%	0 s	 	                                      -[NSSQLiteConnection _finalizeStatement]
+1.00 ms    0.0%	0 s	 	                                       sqlite3_finalize
+1.00 ms    0.0%	0 s	 	                                        sqlite3VdbeReset
+1.00 ms    0.0%	0 s	 	                                         sqlite3VdbeHalt
+1.00 ms    0.0%	0 s	 	                                          sqlite3BtreeCommitPhaseOne
+1.00 ms    0.0%	0 s	 	                                           sqlite3PagerCommitPhaseOne
+1.00 ms    0.0%	0 s	 	                                            syncJournal
+1.00 ms    0.0%	0 s	 	                                             unixSync
+1.00 ms    0.0%	1.00 ms	 	                                              fsync
+1.00 ms    0.0%	0 s	 	                                   -[NSSQLiteConnection commitTransaction]
+1.00 ms    0.0%	0 s	 	                                    _execute
+1.00 ms    0.0%	0 s	 	                                     sqlite3_step
+1.00 ms    0.0%	0 s	 	                                      sqlite3VdbeExec
+1.00 ms    0.0%	0 s	 	                                       sqlite3VdbeHalt
+1.00 ms    0.0%	0 s	 	                                        sqlite3BtreeCommitPhaseOne
+1.00 ms    0.0%	0 s	 	                                         sqlite3PagerCommitPhaseOne
+1.00 ms    0.0%	0 s	 	                                          syncJournal
+1.00 ms    0.0%	0 s	 	                                           unixSync
+1.00 ms    0.0%	0 s	 	                                            openDirectory
+1.00 ms    0.0%	0 s	 	                                             robust_open2
+1.00 ms    0.0%	0 s	 	                                              guarded_open_np
+1.00 ms    0.0%	1.00 ms	 	                                               __guarded_open_np
+1.00 ms    0.0%	0 s	 	                                   -[NSSQLiteConnection _configureAutoVacuum]
+1.00 ms    0.0%	0 s	 	                                    -[NSSQLiteConnection prepareAndExecuteSQLStatement:]
+1.00 ms    0.0%	0 s	 	                                     -[NSSQLiteConnection execute]
+1.00 ms    0.0%	0 s	 	                                      _execute
+1.00 ms    0.0%	0 s	 	                                       sqlite3_step
+1.00 ms    0.0%	0 s	 	                                        sqlite3VdbeExec
+1.00 ms    0.0%	0 s	 	                                         sqlite3VdbeHalt
+1.00 ms    0.0%	0 s	 	                                          sqlite3BtreeCommitPhaseOne
+1.00 ms    0.0%	0 s	 	                                           sqlite3PagerCommitPhaseOne
+1.00 ms    0.0%	0 s	 	                                            unixSync
+1.00 ms    0.0%	1.00 ms	 	                                             fsync
+1.00 ms    0.0%	0 s	 	                                   -[NSSQLiteConnection saveMetadata:]
+1.00 ms    0.0%	0 s	 	                                    +[NSPropertyListSerialization dataWithPropertyList:format:options:error:]
+1.00 ms    0.0%	0 s	 	                                     CFPropertyListCreateData
+1.00 ms    0.0%	0 s	 	                                      CFPropertyListWrite
+1.00 ms    0.0%	0 s	 	                                       __CFPropertyListIsValidAux
+1.00 ms    0.0%	0 s	 	                                        -[__NSDictionaryM __apply:context:]
+1.00 ms    0.0%	0 s	 	                                         __CFPropertyListIsDictPlistAux
+1.00 ms    0.0%	0 s	 	                                          __CFPropertyListIsValidAux
+1.00 ms    0.0%	1.00 ms	 	                                           __CFPropertyListIsArrayPlistAux
+1.00 ms    0.0%	0 s	 	                                  +[NSSQLiteConnection openAtPath:withKey:handle:flags:module:checkpointOnClose:]
+1.00 ms    0.0%	0 s	 	                                   openDatabase
+1.00 ms    0.0%	0 s	 	                                    sqlite3BtreeOpen
+1.00 ms    0.0%	0 s	 	                                     unixOpen
+1.00 ms    0.0%	0 s	 	                                      robust_open2
+1.00 ms    0.0%	0 s	 	                                       guarded_open_np
+1.00 ms    0.0%	1.00 ms	 	                                        __guarded_open_np
+1.00 ms    0.0%	0 s	 	                          -[NSSQLCore load:]
+1.00 ms    0.0%	0 s	 	                           -[NSSQLCore _ensureDatabaseMatchesModel]
+1.00 ms    0.0%	0 s	 	                            -[NSSQLiteConnection performAndWait:]
+1.00 ms    0.0%	0 s	 	                             _dispatch_lane_barrier_sync_invoke_and_complete
+1.00 ms    0.0%	0 s	 	                              _dispatch_client_callout
+1.00 ms    0.0%	0 s	 	                               __37-[NSSQLiteConnection performAndWait:]_block_invoke
+1.00 ms    0.0%	0 s	 	                                __40-[NSSQLCore _ensureDatabaseMatchesModel]_block_invoke
+1.00 ms    0.0%	0 s	 	                                 -[NSSQLCore _checkAndRepairHistoryTrackingUsingConnection:]
+1.00 ms    0.0%	0 s	 	                                  -[NSSQLiteConnection _hasPersistentHistoryTables]
+1.00 ms    0.0%	0 s	 	                                   -[NSSQLiteConnection _hasTableWithName:isTemp:]
+1.00 ms    0.0%	0 s	 	                                    -[NSSQLiteConnection execute]
+1.00 ms    0.0%	0 s	 	                                     _execute
+1.00 ms    0.0%	0 s	 	                                      sqlite3_step
+1.00 ms    0.0%	0 s	 	                                       sqlite3VdbeExec
+1.00 ms    0.0%	0 s	 	                                        sqlite3BtreeBeginTrans
+1.00 ms    0.0%	0 s	 	                                         sqlite3PagerSharedLock
+1.00 ms    0.0%	0 s	 	                                          walTryBeginRead
+1.00 ms    0.0%	0 s	 	                                           unixShmLock
+1.00 ms    0.0%	0 s	 	                                            unixShmSystemLock
+1.00 ms    0.0%	0 s	 	                                             fcntl
+1.00 ms    0.0%	1.00 ms	 	                                              __fcntl
+4.00 ms    0.3%	0 s	 	             -[MWKDataStore setupHistoryAndSavedPageLists]
+3.00 ms    0.2%	0 s	 	              @objc WMFReadingListsController.init(dataStore:)
+3.00 ms    0.2%	0 s	 	               WMFReadingListsController.init(dataStore:)
+3.00 ms    0.2%	0 s	 	                specialized WMFReadingListsController.init(dataStore:)
+3.00 ms    0.2%	0 s	 	                 Fetcher.__allocating_init()
+3.00 ms    0.2%	0 s	 	                  @objc Fetcher.init()
+3.00 ms    0.2%	0 s	 	                   Session.shared.unsafeMutableAddressor
+3.00 ms    0.2%	0 s	 	                    swift_once
+3.00 ms    0.2%	0 s	 	                     _dispatch_once_callout
+3.00 ms    0.2%	0 s	 	                      _dispatch_client_callout
+3.00 ms    0.2%	0 s	 	                       globalinit_33_995479258F626680E9EA3074542DDEA9_func281
+3.00 ms    0.2%	0 s	 	                        Session.init(configuration:)
+3.00 ms    0.2%	0 s	 	                         Session.urlSession.unsafeMutableAddressor
+3.00 ms    0.2%	0 s	 	                          swift_once
+3.00 ms    0.2%	0 s	 	                           _dispatch_once_callout
+3.00 ms    0.2%	0 s	 	                            _dispatch_client_callout
+3.00 ms    0.2%	0 s	 	                             globalinit_33_995479258F626680E9EA3074542DDEA9_func279
+3.00 ms    0.2%	0 s	 	                              closure #1 in variable initialization expression of static Session.urlSession
+1.00 ms    0.0%	0 s	 	                               static Session.defaultConfiguration.getter
+1.00 ms    0.0%	0 s	 	                                +[NSURLSessionConfiguration defaultSessionConfiguration]
+1.00 ms    0.0%	0 s	 	                                 -[__NSCFURLSessionConfiguration copyWithZone:]
+1.00 ms    0.0%	0 s	 	                                  _objc_msgSend_uncached
+1.00 ms    0.0%	1.00 ms	 	                                   os_unfair_lock_unlock
+1.00 ms    0.0%	0 s	 	                               @nonobjc NSURLSession.__allocating_init(configuration:delegate:delegateQueue:)
+1.00 ms    0.0%	0 s	 	                                +[NSURLSession sessionWithConfiguration:delegate:delegateQueue:]
+1.00 ms    0.0%	0 s	 	                                 -[__NSURLSessionLocal initWithConfiguration:delegate:delegateQueue:]
+1.00 ms    0.0%	0 s	 	                                  -[__NSCFURLSession initWithConfiguration:delegate:delegateQueue:]
+1.00 ms    0.0%	0 s	 	                                   -[__NSCFURLSessionConfiguration copyWithZone:]
+1.00 ms    0.0%	0 s	 	                                    _objc_msgSend_uncached
+1.00 ms    0.0%	0 s	 	                                     lookUpImpOrForward
+1.00 ms    0.0%	1.00 ms	 	                                      search_method_list(method_list_t const*, objc_selector*)
+1.00 ms    0.0%	0 s	 	                               Session.sessionDelegate.unsafeMutableAddressor
+1.00 ms    0.0%	0 s	 	                                swift_once
+1.00 ms    0.0%	0 s	 	                                 _dispatch_once_callout
+1.00 ms    0.0%	0 s	 	                                  _dispatch_client_callout
+1.00 ms    0.0%	0 s	 	                                   globalinit_33_995479258F626680E9EA3074542DDEA9_func280
+1.00 ms    0.0%	0 s	 	                                    closure #1 in variable initialization expression of static Session.sessionDelegate
+1.00 ms    0.0%	0 s	 	                                     SessionDelegate.__allocating_init()
+1.00 ms    0.0%	0 s	 	                                      type metadata accessor for SessionDelegate
+1.00 ms    0.0%	0 s	 	                                       _objc_msgSend_uncached
+1.00 ms    0.0%	0 s	 	                                        lookUpImpOrForward
+1.00 ms    0.0%	0 s	 	                                         realizeClassMaybeSwiftMaybeRelock(objc_class*, mutex_tt<false>&, bool)
+1.00 ms    0.0%	0 s	 	                                          realizeClassWithoutSwift(objc_class*)
+1.00 ms    0.0%	0 s	 	                                           calloc
+1.00 ms    0.0%	0 s	 	                                            malloc_zone_calloc
+1.00 ms    0.0%	0 s	 	                                             nanov2_calloc
+1.00 ms    0.0%	1.00 ms	 	                                              nanov2_allocate
+1.00 ms    0.0%	1.00 ms	 	              -[MWKHistoryList initWithDataStore:]
+1.00 ms    0.0%	0 s	 	             -[MWKDataStore setupLegacyDataStore]
+1.00 ms    0.0%	0 s	 	              -[NSFileManager createDirectoryAtPath:withIntermediateDirectories:attributes:error:]
+1.00 ms    0.0%	0 s	 	               _NSPathComponents
+1.00 ms    0.0%	1.00 ms	 	                -[__NSArrayM insertObject:atIndex:]
+1.00 ms    0.0%	0 s	 	             _objc_msgSend_uncached
+1.00 ms    0.0%	0 s	 	              lookUpImpOrForward
+1.00 ms    0.0%	0 s	 	               cache_fill
+1.00 ms    0.0%	0 s	 	                cache_t::reallocate(unsigned int, unsigned int)
+1.00 ms    0.0%	0 s	 	                 allocateBuckets(unsigned int)
+1.00 ms    0.0%	0 s	 	                  calloc
+1.00 ms    0.0%	0 s	 	                   malloc_zone_calloc
+1.00 ms    0.0%	1.00 ms	 	                    default_zone_calloc
+2.00 ms    0.1%	0 s	 	           -[SessionSingleton initWithDataStore:]
+2.00 ms    0.1%	0 s	 	            -[NSURLCache initWithMemoryCapacity:diskCapacity:diskPath:]
+2.00 ms    0.1%	0 s	 	             __CFURLCacheCreateInternal(__CFAllocator const*, long, long, __CFString const*, bool, bool)
+1.00 ms    0.0%	0 s	 	              __CFURLCache::createNSURLStorageClient(__CFString const*, long, std::__1::shared_ptr<__CFURLCache>)
+1.00 ms    0.0%	0 s	 	               -[NSURLCacheDBReader openAndPrepareReadCacheDB]
+1.00 ms    0.0%	0 s	 	                -[NSURLCacheDBReader _prepareDBSelectStatements]
+1.00 ms    0.0%	0 s	 	                 sqlite3_prepare_v2
+1.00 ms    0.0%	0 s	 	                  sqlite3LockAndPrepare
+1.00 ms    0.0%	0 s	 	                   sqlite3BtreeBeginTrans
+1.00 ms    0.0%	0 s	 	                    sqlite3PagerSharedLock
+1.00 ms    0.0%	0 s	 	                     unixLock
+1.00 ms    0.0%	0 s	 	                      fcntl
+1.00 ms    0.0%	1.00 ms	 	                       __fcntl
+1.00 ms    0.0%	0 s	 	              std::__1::shared_ptr<__CFURLCache> std::__1::shared_ptr<__CFURLCache>::make_shared<_CFURLCache const*&, long&, long&, __CFString const*&, __CFString const*&, bool&>(_CFURLCache const*&&&, long&&&, long&&&, __CFString const*&&&, __CFString const*&&&, bool&&&)
+1.00 ms    0.0%	0 s	 	               operator new(unsigned long)
+1.00 ms    0.0%	0 s	 	                malloc
+1.00 ms    0.0%	0 s	 	                 malloc_zone_malloc
+1.00 ms    0.0%	0 s	 	                  szone_malloc_should_clear
+1.00 ms    0.0%	0 s	 	                   small_malloc_should_clear
+1.00 ms    0.0%	1.00 ms	 	                    small_free_list_add_ptr
+1.00 ms    0.0%	0 s	 	           _objc_msgSend_uncached
+1.00 ms    0.0%	0 s	 	            lookUpImpOrForward
+1.00 ms    0.0%	0 s	 	             initializeAndMaybeRelock(objc_class*, objc_object*, mutex_tt<false>&, bool)
+1.00 ms    0.0%	0 s	 	              realizeClassMaybeSwiftMaybeRelock(objc_class*, mutex_tt<false>&, bool)
+1.00 ms    0.0%	0 s	 	               realizeClassWithoutSwift(objc_class*)
+1.00 ms    0.0%	0 s	 	                prepareMethodLists(objc_class*, method_list_t**, int, bool, bool)
+1.00 ms    0.0%	0 s	 	                 fixupMethodList(method_list_t*, bool, bool)
+1.00 ms    0.0%	0 s	 	                  __sel_registerName(char const*, bool, bool)
+1.00 ms    0.0%	0 s	 	                   NXMapGet
+1.00 ms    0.0%	1.00 ms	 	                    _mapStrIsEqual(_NXMapTable*, void const*, void const*)
+9.00 ms    0.7%	0 s	 	    @objc NSUserDefaults.wmf_appTheme.getter
+9.00 ms    0.7%	0 s	 	     NSUserDefaults.wmf_appTheme.getter
+9.00 ms    0.7%	0 s	 	      Theme.standard.unsafeMutableAddressor
+9.00 ms    0.7%	0 s	 	       swift_once
+9.00 ms    0.7%	0 s	 	        _dispatch_once_callout
+9.00 ms    0.7%	0 s	 	         _dispatch_client_callout
+9.00 ms    0.7%	0 s	 	          globalinit_33_4278D53007568830AE2AE3B3F8C2E3E9_func178Tm
+9.00 ms    0.7%	0 s	 	           swift_once
+9.00 ms    0.7%	0 s	 	            _dispatch_once_callout
+9.00 ms    0.7%	0 s	 	             _dispatch_client_callout
+9.00 ms    0.7%	0 s	 	              globalinit_33_4278D53007568830AE2AE3B3F8C2E3E9_func207
+4.00 ms    0.3%	0 s	 	               Theme.lightMultiSelectIndicator.unsafeMutableAddressor
+4.00 ms    0.3%	0 s	 	                swift_once
+4.00 ms    0.3%	0 s	 	                 _dispatch_once_callout
+4.00 ms    0.3%	0 s	 	                  _dispatch_client_callout
+4.00 ms    0.3%	0 s	 	                   globalinit_33_4278D53007568830AE2AE3B3F8C2E3E9_func202Tm
+4.00 ms    0.3%	0 s	 	                    +[UIImageAccessibility imageNamed:inBundle:compatibleWithTraitCollection:]
+4.00 ms    0.3%	0 s	 	                     +[UIImage imageNamed:inBundle:compatibleWithTraitCollection:]
+2.00 ms    0.1%	0 s	 	                      _UIKitGetApplicationAssetManager
+2.00 ms    0.1%	0 s	 	                       _dispatch_once_callout
+2.00 ms    0.1%	0 s	 	                        _dispatch_client_callout
+2.00 ms    0.1%	0 s	 	                         ___UIKitGetApplicationAssetManager_block_invoke
+2.00 ms    0.1%	0 s	 	                          -[_UIAssetManager initWithName:inBundle:idiom:]
+2.00 ms    0.1%	0 s	 	                           -[_UIAssetManager _initWithName:inBundle:idiom:lock:allowMissingCatalog:]
+1.00 ms    0.0%	0 s	 	                            -[CUICatalog initWithName:fromBundle:error:]
+1.00 ms    0.0%	0 s	 	                             +[CUIThemeFacet themeNamed:forBundleIdentifier:error:]
+1.00 ms    0.0%	0 s	 	                              RunTimeThemeRefForBundleIdentifierAndName
+1.00 ms    0.0%	0 s	 	                               PerformBlockWithThemeRefCache
+1.00 ms    0.0%	0 s	 	                                _dispatch_lane_barrier_sync_invoke_and_complete
+1.00 ms    0.0%	0 s	 	                                 _dispatch_client_callout
+1.00 ms    0.0%	0 s	 	                                  __RunTimeThemeRefForBundleIdentifierAndName_block_invoke
+1.00 ms    0.0%	0 s	 	                                   _RegisterThemeProvider
+1.00 ms    0.0%	0 s	 	                                    PerformBlockWithThemeRegistry
+1.00 ms    0.0%	0 s	 	                                     _dispatch_lane_barrier_sync_invoke_and_complete
+1.00 ms    0.0%	0 s	 	                                      _dispatch_client_callout
+1.00 ms    0.0%	0 s	 	                                       ___RegisterThemeProvider_block_invoke
+1.00 ms    0.0%	0 s	 	                                        -[NSClassicMapTable objectForKey:]
+1.00 ms    0.0%	1.00 ms	 	                                         CFBasicHashFindBucket
+1.00 ms    0.0%	0 s	 	                            _UIKitBundlePath
+1.00 ms    0.0%	0 s	 	                             pthread_once
+1.00 ms    0.0%	0 s	 	                              _os_once_callout
+1.00 ms    0.0%	0 s	 	                               __pthread_once_handler
+1.00 ms    0.0%	0 s	 	                                __InitializeUIKitBundlePath
+1.00 ms    0.0%	0 s	 	                                 -[NSBundle bundlePath]
+1.00 ms    0.0%	0 s	 	                                  -[NSBundle _cfBundle]
+1.00 ms    0.0%	0 s	 	                                   _CFBundleCreate
+1.00 ms    0.0%	0 s	 	                                    CFBundleGetInfoDictionary
+1.00 ms    0.0%	0 s	 	                                     _CFBundleCopyInfoDictionaryInDirectoryWithVersion
+1.00 ms    0.0%	0 s	 	                                      _CFIterateDirectory
+1.00 ms    0.0%	0 s	 	                                       readdir
+1.00 ms    0.0%	0 s	 	                                        _readdir_unlocked
+1.00 ms    0.0%	1.00 ms	 	                                         __getdirentries64
+2.00 ms    0.1%	0 s	 	                      -[_UIAssetManager imageNamed:withTrait:]
+2.00 ms    0.1%	0 s	 	                       -[_UIAssetManager imageNamed:scale:gamut:layoutDirection:idiom:userInterfaceStyle:subtype:cachingOptions:sizeClassPair:attachCatalogImage:]
+2.00 ms    0.1%	0 s	 	                        __139-[_UIAssetManager imageNamed:scale:gamut:layoutDirection:idiom:userInterfaceStyle:subtype:cachingOptions:sizeClassPair:attachCatalogImage:]_block_invoke
+1.00 ms    0.0%	0 s	 	                         -[CUICatalog namedLookupWithName:scaleFactor:deviceIdiom:deviceSubtype:displayGamut:layoutDirection:sizeClassHorizontal:sizeClassVertical:]
+1.00 ms    0.0%	0 s	 	                          -[CUICatalog _namedLookupWithName:scaleFactor:deviceIdiom:deviceSubtype:displayGamut:layoutDirection:sizeClassHorizontal:sizeClassVertical:]
+1.00 ms    0.0%	0 s	 	                           -[CUICatalog _resolvedRenditionKeyForName:scaleFactor:deviceIdiom:deviceSubtype:displayGamut:layoutDirection:sizeClassHorizontal:sizeClassVertical:memoryClass:graphicsClass:appearanceIdentifier:graphicsFallBackOrder:deviceSubtypeFallBackOrder:withBaseKeySelector:]
+1.00 ms    0.0%	0 s	 	                            -[CUICatalog _resolvedRenditionKeyFromThemeRef:withBaseKey:scaleFactor:deviceIdiom:deviceSubtype:displayGamut:layoutDirection:sizeClassHorizontal:sizeClassVertical:memoryClass:graphicsClass:graphicsFallBackOrder:deviceSubtypeFallBackOrder:iconSizeIndex:appearanceIdentifier:]
+1.00 ms    0.0%	1.00 ms	 	                             CUIRenditionKeySetValueForAttribute
+1.00 ms    0.0%	0 s	 	                         -[CUIThemeRendition uncroppedImage]
+1.00 ms    0.0%	0 s	 	                          -[_CUIInternalLinkRendition unslicedImage]
+1.00 ms    0.0%	0 s	 	                           -[_CUIInternalLinkRendition _sourceImage]
+1.00 ms    0.0%	0 s	 	                            -[CUIStructuredThemeStore renditionWithKey:usingKeySignature:]
+1.00 ms    0.0%	0 s	 	                             -[CUIThemeRendition initWithCSIData:forKey:artworkStatus:]
+1.00 ms    0.0%	0 s	 	                              -[CUIThemeRendition _initWithCSIData:forKey:artworkStatus:]
+1.00 ms    0.0%	0 s	 	                               -[_CUIThemePixelRendition _initWithCSIHeader:]
+1.00 ms    0.0%	0 s	 	                                -[CUIThemeRendition _initWithCSIHeader:]
+1.00 ms    0.0%	0 s	 	                                 -[CUIThemeRendition _initializePropertiesFromCSIData:]
+1.00 ms    0.0%	1.00 ms	 	                                  CGColorSpaceCreateWithName
+2.00 ms    0.1%	0 s	 	               WMFLocalizedStringWithDefaultValue
+2.00 ms    0.1%	0 s	 	                -[NSBundleAccessibility localizedStringForKey:value:table:]
+2.00 ms    0.1%	0 s	 	                 -[NSBundle localizedStringForKey:value:table:]
+2.00 ms    0.1%	0 s	 	                  CFBundleCopyLocalizedStringForLocalization
+1.00 ms    0.0%	0 s	 	                   CFBundleCopyResourceURL
+1.00 ms    0.0%	0 s	 	                    _CFBundleCopyFindResources
+1.00 ms    0.0%	0 s	 	                     _copyResourceURLsFromBundle
+1.00 ms    0.0%	0 s	 	                      _copyQueryTable
+1.00 ms    0.0%	0 s	 	                       _CFBundleCopyLanguageSearchListInBundle
+1.00 ms    0.0%	0 s	 	                        CFBundleCopyBundleLocalizations
+1.00 ms    0.0%	0 s	 	                         _CFBundleCopyLProjDirectoriesForURL
+1.00 ms    0.0%	0 s	 	                          _CFIterateDirectory
+1.00 ms    0.0%	1.00 ms	 	                           objc_msgSend
+1.00 ms    0.0%	0 s	 	                   CFPropertyListCreateWithData
+1.00 ms    0.0%	0 s	 	                    _CFPropertyListCreateWithData
+1.00 ms    0.0%	0 s	 	                     __CFTryParseBinaryPlist
+1.00 ms    0.0%	0 s	 	                      __CFBinaryPlistCreateObjectFiltered
+1.00 ms    0.0%	1.00 ms	 	                       __CFBinaryPlistCreateObjectFiltered
+1.00 ms    0.0%	0 s	 	               Theme.__allocating_init(colors:imageOpacity:cardBorderWidthInPixels:cardShadowOpacity:multiSelectIndicatorImage:isDark:name:displayName:analyticsName:webName:)
+1.00 ms    0.0%	1.00 ms	 	                Theme.init(colors:imageOpacity:cardBorderWidthInPixels:cardShadowOpacity:multiSelectIndicatorImage:isDark:name:displayName:analyticsName:webName:)
+1.00 ms    0.0%	0 s	 	               swift_once
+1.00 ms    0.0%	0 s	 	                _dispatch_once_callout
+1.00 ms    0.0%	0 s	 	                 _dispatch_client_callout
+1.00 ms    0.0%	0 s	 	                  globalinit_33_4278D53007568830AE2AE3B3F8C2E3E9_func205
+1.00 ms    0.0%	0 s	 	                   closure #1 in DeviceInfo.isOlderDevice.getter
+1.00 ms    0.0%	0 s	 	                    closure #1 in DeviceInfo.model.getter
+1.00 ms    0.0%	0 s	 	                     _convertConstStringToUTF8PointerArgument<A>(_:)
+1.00 ms    0.0%	0 s	 	                      specialized String.utf8CString.getter
+1.00 ms    0.0%	0 s	 	                       specialized _copyCollectionToContiguousArray<A>(_:)
+1.00 ms    0.0%	0 s	 	                        swift_getGenericMetadata
+1.00 ms    0.0%	0 s	 	                         swift::MetadataCacheEntryBase<(anonymous namespace)::GenericCacheEntry, void const*>::doInitialization(swift::ConcurrencyControl&, swift::MetadataCompletionQueueEntry*, swift::MetadataRequest)
+1.00 ms    0.0%	0 s	 	                          type metadata completion function for _ContiguousArrayStorage
+1.00 ms    0.0%	0 s	 	                           swift_initClassMetadata
+1.00 ms    0.0%	0 s	 	                            _swift_initClassMetadataImpl(swift::TargetClassMetadata<swift::InProcess>*, swift::ClassLayoutFlags, unsigned long, swift::TypeLayout const* const*, unsigned long*, bool)
+1.00 ms    0.0%	0 s	 	                             getSuperclassMetadata(swift::TargetClassMetadata<swift::InProcess>*, bool)
+1.00 ms    0.0%	0 s	 	                              swift::swift_getTypeByMangledName(swift::MetadataRequest, llvm::StringRef, std::__1::function<swift::TargetMetadata<swift::InProcess> const* (unsigned int, unsigned int)>, std::__1::function<swift::TargetWitnessTable<swift::InProcess> const* (swift::TargetMetadata<swift::InProcess> const*, unsigned int)>)
+1.00 ms    0.0%	0 s	 	                               swift_getTypeByMangledNameImpl(swift::MetadataRequest, llvm::StringRef, std::__1::function<swift::TargetMetadata<swift::InProcess> const* (unsigned int, unsigned int)>, std::__1::function<swift::TargetWitnessTable<swift::InProcess> const* (swift::TargetMetadata<swift::InProcess> const*, unsigned int)>)
+1.00 ms    0.0%	0 s	 	                                swift::Demangle::Demangler::demangleType(llvm::StringRef)
+1.00 ms    0.0%	1.00 ms	 	                                 swift::Demangle::Demangler::demangleOperator()
+1.00 ms    0.0%	0 s	 	               @objc static NSBundle.wmf.getter
+1.00 ms    0.0%	0 s	 	                static NSBundle.wmf.getter
+1.00 ms    0.0%	0 s	 	                 NSBundle.wmf.unsafeMutableAddressor
+1.00 ms    0.0%	0 s	 	                  swift_once
+1.00 ms    0.0%	0 s	 	                   _dispatch_once_callout
+1.00 ms    0.0%	0 s	 	                    _dispatch_client_callout
+1.00 ms    0.0%	0 s	 	                     globalinit_33_3475B7F01342A47BA160CC674E17741C_func325
+1.00 ms    0.0%	0 s	 	                      @nonobjc NSBundle.__allocating_init(identifier:)
+1.00 ms    0.0%	0 s	 	                       +[NSBundle bundleWithIdentifier:]
+1.00 ms    0.0%	0 s	 	                        CFBundleGetBundleWithIdentifier
+1.00 ms    0.0%	0 s	 	                         _CFBundleEnsureBundleExistsForImagePath
+1.00 ms    0.0%	0 s	 	                          _CFBundleCreate
+1.00 ms    0.0%	0 s	 	                           CFBundleGetInfoDictionary
+1.00 ms    0.0%	0 s	 	                            _CFBundleCopyInfoDictionaryInDirectoryWithVersion
+1.00 ms    0.0%	0 s	 	                             _CFIterateDirectory
+1.00 ms    0.0%	0 s	 	                              readdir
+1.00 ms    0.0%	0 s	 	                               _readdir_unlocked
+1.00 ms    0.0%	1.00 ms	 	                                __getdirentries64
+1.00 ms    0.0%	0 s	 	    -[NSObject(NSKeyValueObserverRegistration) addObserver:forKeyPath:options:context:]
+1.00 ms    0.0%	0 s	 	     -[NSObject(NSKeyValueObserverRegistration) _addObserver:forProperty:options:context:]
+1.00 ms    0.0%	0 s	 	      -[NSKeyValueUnnestedProperty isaForAutonotifying]
+1.00 ms    0.0%	0 s	 	       -[NSKeyValueUnnestedProperty _isaForAutonotifying]
+1.00 ms    0.0%	0 s	 	        _NSKVONotifyingEnableForInfoAndKey
+1.00 ms    0.0%	0 s	 	         _NSKeyValueMutableArrayGetterForIsaAndKey
+1.00 ms    0.0%	0 s	 	          +[NSObject(NSKeyValueCoding) _createMutableArrayValueGetterWithContainerClassID:key:]
+1.00 ms    0.0%	0 s	 	           +[NSObject(NSKeyValueCodingPrivate) _createValueGetterWithContainerClassID:key:]
+1.00 ms    0.0%	0 s	 	            NSKeyValueMethodForPattern
+1.00 ms    0.0%	0 s	 	             class_getInstanceMethod
+1.00 ms    0.0%	0 s	 	              lookUpImpOrForward
+1.00 ms    0.0%	0 s	 	               resolveInstanceMethod(objc_class*, objc_selector*, objc_object*)
+1.00 ms    0.0%	0 s	 	                lookUpImpOrForward
+1.00 ms    0.0%	1.00 ms	 	                 search_method_list(method_list_t const*, objc_selector*)
+1.00 ms    0.0%	0 s	 	    @objc EditHintController.init()
+1.00 ms    0.0%	0 s	 	     EditHintController.init()
+1.00 ms    0.0%	0 s	 	      UIViewController.__allocating_init()
+1.00 ms    0.0%	0 s	 	       @nonobjc UIViewController.init()
+1.00 ms    0.0%	0 s	 	        @objc EditHintViewController.init(nibName:bundle:)
+1.00 ms    0.0%	0 s	 	         @objc HintViewController.init(nibName:bundle:)
+1.00 ms    0.0%	0 s	 	          HintViewController.init(nibName:bundle:)
+1.00 ms    0.0%	0 s	 	           -[UIViewController initWithNibName:bundle:]
+1.00 ms    0.0%	0 s	 	            -[UIViewController _doCommonSetup]
+1.00 ms    0.0%	0 s	 	             _objc_msgSend_uncached
+1.00 ms    0.0%	0 s	 	              lookUpImpOrForward
+1.00 ms    0.0%	0 s	 	               cache_fill
+1.00 ms    0.0%	1.00 ms	 	                cache_t::find(objc_selector*, objc_object*)
+1.00 ms    0.0%	0 s	 	    _objc_msgSend_uncached
+1.00 ms    0.0%	0 s	 	     lookUpImpOrForward
+1.00 ms    0.0%	0 s	 	      initializeAndMaybeRelock(objc_class*, objc_object*, mutex_tt<false>&, bool)
+1.00 ms    0.0%	0 s	 	       initializeNonMetaClass
+1.00 ms    0.0%	0 s	 	        initializeNonMetaClass
+1.00 ms    0.0%	0 s	 	         CALLING_SOME_+initialize_METHOD
+1.00 ms    0.0%	0 s	 	          +[NSManagedObject initialize]
+1.00 ms    0.0%	0 s	 	           _objc_msgSend_uncached
+1.00 ms    0.0%	0 s	 	            lookUpImpOrForward
+1.00 ms    0.0%	0 s	 	             initializeAndMaybeRelock(objc_class*, objc_object*, mutex_tt<false>&, bool)
+1.00 ms    0.0%	0 s	 	              initializeNonMetaClass
+1.00 ms    0.0%	0 s	 	               CALLING_SOME_+initialize_METHOD
+1.00 ms    0.0%	0 s	 	                +[_PFRoutines initialize]
+1.00 ms    0.0%	0 s	 	                 _objc_msgSend_uncached
+1.00 ms    0.0%	0 s	 	                  lookUpImpOrForward
+1.00 ms    0.0%	0 s	 	                   initializeAndMaybeRelock(objc_class*, objc_object*, mutex_tt<false>&, bool)
+1.00 ms    0.0%	0 s	 	                    realizeClassMaybeSwiftMaybeRelock(objc_class*, mutex_tt<false>&, bool)
+1.00 ms    0.0%	0 s	 	                     realizeClassWithoutSwift(objc_class*)
+1.00 ms    0.0%	0 s	 	                      prepareMethodLists(objc_class*, method_list_t**, int, bool, bool)
+1.00 ms    0.0%	0 s	 	                       fixupMethodList(method_list_t*, bool, bool)
+1.00 ms    0.0%	0 s	 	                        __sel_registerName(char const*, bool, bool)
+1.00 ms    0.0%	0 s	 	                         NXMapGet
+1.00 ms    0.0%	1.00 ms	 	                          _NXMapMember(_NXMapTable*, void const*, void**)
+2.00 ms    0.1%	0 s	 	   -[UITabBarController loadView]
+2.00 ms    0.1%	0 s	 	    -[UITabBarController _layoutContainerView]
+2.00 ms    0.1%	0 s	 	     -[UITabBarController _prepareTabBar]
+2.00 ms    0.1%	0 s	 	      -[UIView(Geometry) sizeToFit]
+2.00 ms    0.1%	0 s	 	       -[UITabBar sizeThatFits:]
+2.00 ms    0.1%	0 s	 	        -[_UITabBarVisualProviderLegacyIOS intrinsicContentSizeGivenSize:]
+2.00 ms    0.1%	0 s	 	         _UIBackgroundExtensionForBar
+2.00 ms    0.1%	0 s	 	          _UIBackgroundExtensionForBarWithMaxY
+2.00 ms    0.1%	0 s	 	           -[UIScreen _displayEdgeInfoProvider]
+2.00 ms    0.1%	0 s	 	            -[UISApplicationSupportClient edgeInfoForDisplayConfiguration:]
+1.00 ms    0.0%	0 s	 	             -[FBSServiceFacilityClient sendMessage:withType:replyHandler:waitForReply:timeout:]
+1.00 ms    0.0%	0 s	 	              -[FBSServiceFacilityXPCClient sendMessage:withType:replyHandler:waitForReply:timeout:]
+1.00 ms    0.0%	0 s	 	               objc_object::sidetable_release(bool)
+1.00 ms    0.0%	0 s	 	                object_dispose
+1.00 ms    0.0%	0 s	 	                 objc_destructInstance
+1.00 ms    0.0%	0 s	 	                  object_cxxDestructFromClass(objc_object*, objc_class*)
+1.00 ms    0.0%	0 s	 	                   _xpc_dispose
+1.00 ms    0.0%	0 s	 	                    _xpc_dictionary_dispose
+1.00 ms    0.0%	0 s	 	                     _xpc_dispose
+1.00 ms    0.0%	0 s	 	                      _xpc_serializer_dispose
+1.00 ms    0.0%	0 s	 	                       _dispatch_dispose
+1.00 ms    0.0%	0 s	 	                        free
+1.00 ms    0.0%	1.00 ms	 	                         small_size
+1.00 ms    0.0%	0 s	 	             BSSerializeNSSecureEncodableObjectToXPCDictionaryWithKey
+1.00 ms    0.0%	0 s	 	              +[NSKeyedArchiver archivedDataWithRootObject:requiringSecureCoding:error:]
+1.00 ms    0.0%	0 s	 	               _encodeObject
+1.00 ms    0.0%	0 s	 	                -[FBSDisplayConfiguration encodeWithCoder:]
+1.00 ms    0.0%	0 s	 	                 0x107659007
+1.00 ms    0.0%	0 s	 	                  dyld_stub_binder
+1.00 ms    0.0%	0 s	 	                   0x1055660b8
+1.00 ms    0.0%	0 s	 	                    0x10557ace7
+1.00 ms    0.0%	0 s	 	                     0x1055788e6
+1.00 ms    0.0%	1.00 ms	 	                      0x10556f728
+1.00 ms    0.0%	0 s	 	   -[UIViewController initWithNibName:bundle:]
+1.00 ms    0.0%	0 s	 	    -[UIViewController _doCommonSetup]
+1.00 ms    0.0%	0 s	 	     +[UIViewController defaultFormSheetSize]
+1.00 ms    0.0%	0 s	 	      -[UIScreen(UISnapshotting) _wantsWideContentMargins]
+1.00 ms    0.0%	0 s	 	       MGGetBoolAnswer
+1.00 ms    0.0%	0 s	 	        0x10bd50025
+1.00 ms    0.0%	0 s	 	         0x10bd5d888
+1.00 ms    0.0%	0 s	 	          0x10bd4dcda
+1.00 ms    0.0%	0 s	 	           CFDictionaryGetValue
+1.00 ms    0.0%	1.00 ms	 	            CFBasicHashFindBucket
+15.00 ms    1.2%	0 s	 	  -[WMFAppViewController launchAppInWindow:waitToResumeApp:]
+5.00 ms    0.4%	0 s	 	   -[WMFAppViewController migrateIfNecessary]
+5.00 ms    0.4%	0 s	 	    -[WMFAppViewController startMigrationBackgroundTask:]
+5.00 ms    0.4%	0 s	 	     -[UIApplication __beginBackgroundTaskWithExpirationHandler:]
+5.00 ms    0.4%	0 s	 	      dladdr
+5.00 ms    0.4%	0 s	 	       0x10556c670
+5.00 ms    0.4%	5.00 ms	 	        0x105576756
+5.00 ms    0.4%	0 s	 	   -[UINavigationController initWithRootViewController:]
+5.00 ms    0.4%	0 s	 	    -[UINavigationController pushViewController:animated:]
+5.00 ms    0.4%	0 s	 	     -[UINavigationController pushViewController:transition:forceImmediate:]
+3.00 ms    0.2%	0 s	 	      -[UIViewController view]
+3.00 ms    0.2%	0 s	 	       -[UIViewController loadViewIfRequired]
+3.00 ms    0.2%	0 s	 	        -[UINavigationController loadView]
+3.00 ms    0.2%	0 s	 	         -[UINavigationController _navigationBarHiddenByDefault:]
+2.00 ms    0.1%	0 s	 	          -[UINavigationController setNavigationBar:]
+2.00 ms    0.1%	0 s	 	           -[UINavigationController _positionNavigationBarHidden:edge:]
+2.00 ms    0.1%	0 s	 	            -[UINavigationController _positionNavigationBarHidden:edge:initialOffset:]
+2.00 ms    0.1%	0 s	 	             -[UIView(Hierarchy) layoutBelowIfNeeded]
+2.00 ms    0.1%	0 s	 	              CA::Layer::layout_if_needed(CA::Transaction*)
+2.00 ms    0.1%	0 s	 	               -[CALayer layoutSublayers]
+1.00 ms    0.0%	0 s	 	                _objc_msgSend_uncached
+1.00 ms    0.0%	0 s	 	                 lookUpImpOrForward
+1.00 ms    0.0%	1.00 ms	 	                  search_method_list(method_list_t const*, objc_selector*)
+1.00 ms    0.0%	0 s	 	                -[UINavigationBar layoutSublayersOfLayer:]
+1.00 ms    0.0%	0 s	 	                 -[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+1.00 ms    0.0%	0 s	 	                  -[UINavigationBar layoutSubviews]
+1.00 ms    0.0%	0 s	 	                   -[_UINavigationBarVisualProviderModernIOS layoutSubviews]
+1.00 ms    0.0%	0 s	 	                    -[_UINavigationBarVisualProviderModernIOS _updateBackgrounds]
+1.00 ms    0.0%	0 s	 	                     -[_UIBarBackground transitionBackgroundViews]
+1.00 ms    0.0%	0 s	 	                      -[_UIBarBackground updateBackground]
+1.00 ms    0.0%	0 s	 	                       -[UIVisualEffectView setBackgroundEffects:]
+1.00 ms    0.0%	0 s	 	                        -[UIVisualEffectView _configureAllEffects]
+1.00 ms    0.0%	0 s	 	                         -[_UIVisualEffectHost setCurrentEffectNode:]
+1.00 ms    0.0%	0 s	 	                          -[_UIVisualEffectHost _configureEffectNode:]
+1.00 ms    0.0%	0 s	 	                           -[_UIVisualEffectHost _viewForEntry:fromCapturePool:imagePool:otherPool:]
+1.00 ms    0.0%	0 s	 	                            -[UIView init]
+1.00 ms    0.0%	0 s	 	                             -[_UIVisualEffectSubview initWithFrame:]
+1.00 ms    0.0%	0 s	 	                              -[UIView initWithFrame:]
+1.00 ms    0.0%	0 s	 	                               UIViewCommonInitWithFrame
+1.00 ms    0.0%	0 s	 	                                +[UIView(Internal) _registerClassForIdiomInitializationIfNeccessary]
+1.00 ms    0.0%	0 s	 	                                 _objc_msgSend_uncached
+1.00 ms    0.0%	0 s	 	                                  lookUpImpOrForward
+1.00 ms    0.0%	0 s	 	                                   cache_fill
+1.00 ms    0.0%	0 s	 	                                    cache_t::reallocate(unsigned int, unsigned int)
+1.00 ms    0.0%	0 s	 	                                     allocateBuckets(unsigned int)
+1.00 ms    0.0%	0 s	 	                                      calloc
+1.00 ms    0.0%	0 s	 	                                       malloc_zone_calloc
+1.00 ms    0.0%	0 s	 	                                        nanov2_calloc
+1.00 ms    0.0%	0 s	 	                                         nanov2_allocate
+1.00 ms    0.0%	1.00 ms	 	                                          _platform_bzero$VARIANT$Haswell
+1.00 ms    0.0%	0 s	 	          -[UINavigationBar initWithFrame:]
+1.00 ms    0.0%	0 s	 	           -[_UINavigationBarVisualProviderModernIOS prepare]
+1.00 ms    0.0%	0 s	 	            -[_UINavigationBarLargeTitleView initWithFrame:]
+1.00 ms    0.0%	0 s	 	             -[_UINavigationBarLargeTitleViewAccessibility _setupTitle]
+1.00 ms    0.0%	0 s	 	              -[_UINavigationBarLargeTitleViewAccessibility _accessibilityLoadAccessibilityInformation]
+1.00 ms    0.0%	0 s	 	               -[NSObject(UIAccessibilitySafeCategory) safeValueForKey:]
+1.00 ms    0.0%	0 s	 	                -[NSObject(UIAccessibilitySafeCategory) _accessibilityPerformSafeValueKeyBlock:withKey:onClass:]
+1.00 ms    0.0%	0 s	 	                 __57-[NSObject(UIAccessibilitySafeCategory) safeValueForKey:]_block_invoke
+1.00 ms    0.0%	0 s	 	                  -[NSObject(NSKeyValueCoding) valueForKey:]
+1.00 ms    0.0%	0 s	 	                   +[NSObject(NSKeyValueCodingPrivate) _createValueGetterWithContainerClassID:key:]
+1.00 ms    0.0%	0 s	 	                    NSKeyValueMethodForPattern
+1.00 ms    0.0%	0 s	 	                     class_getInstanceMethod
+1.00 ms    0.0%	1.00 ms	 	                      search_method_list(method_list_t const*, objc_selector*)
+1.00 ms    0.0%	0 s	 	      +[_UIStatistics(UICommonStatisticsGathering) previewInteractionTapCount]
+1.00 ms    0.0%	0 s	 	       _dispatch_once_callout
+1.00 ms    0.0%	0 s	 	        _dispatch_client_callout
+1.00 ms    0.0%	0 s	 	         __72+[_UIStatistics(UICommonStatisticsGathering) previewInteractionTapCount]_block_invoke
+1.00 ms    0.0%	0 s	 	          -[_UIStatistics initWithDomain:identifierReporting:]
+1.00 ms    0.0%	0 s	 	           -[NSString initWithFormat:]
+1.00 ms    0.0%	0 s	 	            _CFStringCreateWithFormatAndArgumentsAux2
+1.00 ms    0.0%	1.00 ms	 	             __CFStringAppendFormatCore
+1.00 ms    0.0%	0 s	 	      -[UINavigationController _executeNavigationHandler:deferred:]
+1.00 ms    0.0%	0 s	 	       __71-[UINavigationController pushViewController:transition:forceImmediate:]_block_invoke
+1.00 ms    0.0%	0 s	 	        -[UINavigationBar _pushNavigationItem:transition:]
+1.00 ms    0.0%	0 s	 	         -[UINavigationBar _performUpdatesIgnoringLock:]
+1.00 ms    0.0%	0 s	 	          -[UINavigationBar pushNavigationItem:animated:]
+1.00 ms    0.0%	0 s	 	           -[UINavigationBar _pushNavigationItemUsingCurrentTransition:]
+1.00 ms    0.0%	0 s	 	            -[UINavigationBar _pushNavigationItem:transitionAssistant:]
+1.00 ms    0.0%	0 s	 	             -[_UINavigationBarVisualProviderModernIOS _updateWithCompletion:]
+1.00 ms    0.0%	0 s	 	              -[_UINavigationBarVisualProviderModernIOS layoutSubviews]
+1.00 ms    0.0%	0 s	 	               -[_UINavigationBarVisualProviderModernIOS _updateBackgrounds]
+1.00 ms    0.0%	0 s	 	                -[_UIBarBackground transitionBackgroundViews]
+1.00 ms    0.0%	0 s	 	                 -[UIView(Internal) _addSubview:positioned:relativeTo:]
+1.00 ms    0.0%	0 s	 	                  -[UIView(Hierarchy) _makeSubtreePerformSelector:withObject:withObject:copySublayers:]
+1.00 ms    0.0%	0 s	 	                   __85-[UIView(Hierarchy) _makeSubtreePerformSelector:withObject:withObject:copySublayers:]_block_invoke
+1.00 ms    0.0%	0 s	 	                    _objc_msgSend_uncached
+1.00 ms    0.0%	0 s	 	                     lookUpImpOrForward
+1.00 ms    0.0%	1.00 ms	 	                      cache_fill
+2.00 ms    0.1%	0 s	 	   -[UIWindow setRootViewController:]
+1.00 ms    0.0%	0 s	 	    -[UIApplication _updateSerializableKeyCommandsForResponder:]
+1.00 ms    0.0%	0 s	 	     BKSHIDSetKeyCommands
+1.00 ms    0.0%	0 s	 	      -[NSObject(BaseBoard) bs_secureEncoded]
+1.00 ms    0.0%	0 s	 	       _BSCreateDataFromObject
+1.00 ms    0.0%	0 s	 	        +[NSKeyedArchiver archivedDataWithRootObject:requiringSecureCoding:error:]
+1.00 ms    0.0%	0 s	 	         _encodeObject
+1.00 ms    0.0%	0 s	 	          -[NSKeyedArchiver _encodeArrayOfObjects:forKey:]
+1.00 ms    0.0%	1.00 ms	 	           objc_msgSend
+1.00 ms    0.0%	0 s	 	    -[UIViewController __willChangeToIdiom:onScreen:]
+1.00 ms    0.0%	0 s	 	     -[UIViewController __willChangeToIdiom:onScreen:]
+1.00 ms    0.0%	0 s	 	      -[UITabBarController _willChangeToIdiom:onScreen:]
+1.00 ms    0.0%	0 s	 	       -[UITabBarController _updateLayoutForTraitCollection:]
+1.00 ms    0.0%	0 s	 	        -[NSBundleAccessibility localizedStringForKey:value:table:]
+1.00 ms    0.0%	0 s	 	         -[NSBundle localizedStringForKey:value:table:]
+1.00 ms    0.0%	0 s	 	          CFBundleCopyLocalizedStringForLocalization
+1.00 ms    0.0%	0 s	 	           CFBundleCopyResourceURL
+1.00 ms    0.0%	0 s	 	            _CFBundleCopyFindResources
+1.00 ms    0.0%	0 s	 	             _copyResourceURLsFromBundle
+1.00 ms    0.0%	0 s	 	              _copyQueryTable
+1.00 ms    0.0%	0 s	 	               _createQueryTableAtPath
+1.00 ms    0.0%	0 s	 	                _CFBundleReadDirectory
+1.00 ms    0.0%	0 s	 	                 _CFIterateDirectory
+1.00 ms    0.0%	0 s	 	                  __opendir2
+1.00 ms    0.0%	1.00 ms	 	                   __open_nocancel
+2.00 ms    0.1%	0 s	 	   -[UIWindow makeKeyAndVisible]
+2.00 ms    0.1%	0 s	 	    -[UIWindowAccessibility _orderFrontWithoutMakingKey]
+2.00 ms    0.1%	0 s	 	     -[UIWindow _setHidden:forced:]
+1.00 ms    0.0%	0 s	 	      -[UIWindow _beginKeyWindowDeferral]
+1.00 ms    0.0%	0 s	 	       +[BKSEventFocusManager sharedInstance]
+1.00 ms    0.0%	0 s	 	        _dispatch_once_callout
+1.00 ms    0.0%	0 s	 	         _dispatch_client_callout
+1.00 ms    0.0%	0 s	 	          __38+[BKSEventFocusManager sharedInstance]_block_invoke
+1.00 ms    0.0%	0 s	 	           -[BKSEventFocusManager init]
+1.00 ms    0.0%	0 s	 	            -[BKSEventFocusManager initWithIPCInterface:]
+1.00 ms    0.0%	0 s	 	             -[BKSEventFocusManager _connectToEventFocusService]
+1.00 ms    0.0%	0 s	 	              +[NSXPCInterface interfaceWithProtocol:]
+1.00 ms    0.0%	0 s	 	               -[NSXPCInterface setProtocol:]
+1.00 ms    0.0%	0 s	 	                setProtocolMetadata
+1.00 ms    0.0%	0 s	 	                 setProtocolMetdataWithMethods
+1.00 ms    0.0%	0 s	 	                  setProtocolMetadataWithSignature
+1.00 ms    0.0%	1.00 ms	 	                   -[__NSArrayM insertObject:atIndex:]
+1.00 ms    0.0%	0 s	 	      -[UIWindow addRootViewControllerViewIfPossible]
+1.00 ms    0.0%	0 s	 	       -[UIView(Internal) _addSubview:positioned:relativeTo:]
+1.00 ms    0.0%	0 s	 	        -[UIView(Hierarchy) _postMovedFromSuperview:]
+1.00 ms    0.0%	0 s	 	         __45-[UIView(Hierarchy) _postMovedFromSuperview:]_block_invoke
+1.00 ms    0.0%	0 s	 	          -[UIView(Internal) _didMoveFromWindow:toWindow:]
+1.00 ms    0.0%	0 s	 	           -[UINavigationController viewDidMoveToWindow:shouldAppearOrDisappear:]
+1.00 ms    0.0%	0 s	 	            -[UIViewController viewDidMoveToWindow:shouldAppearOrDisappear:]
+1.00 ms    0.0%	0 s	 	             -[UINavigationController _updateBarsForCurrentInterfaceOrientationAndForceBarLayout:]
+1.00 ms    0.0%	0 s	 	              -[UINavigationController _repositionPaletteWithNavigationBarHidden:duration:shouldUpdateNavigationItems:]
+1.00 ms    0.0%	0 s	 	               __105-[UINavigationController _repositionPaletteWithNavigationBarHidden:duration:shouldUpdateNavigationItems:]_block_invoke
+1.00 ms    0.0%	0 s	 	                -[UINavigationController _positionNavigationBarHidden:edge:initialOffset:]
+1.00 ms    0.0%	0 s	 	                 -[UIView(Hierarchy) layoutBelowIfNeeded]
+1.00 ms    0.0%	0 s	 	                  CA::Layer::layout_if_needed(CA::Transaction*)
+1.00 ms    0.0%	0 s	 	                   -[CALayer layoutSublayers]
+1.00 ms    0.0%	0 s	 	                    -[UINavigationBar layoutSublayersOfLayer:]
+1.00 ms    0.0%	0 s	 	                     -[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+1.00 ms    0.0%	0 s	 	                      -[UINavigationBar layoutSubviews]
+1.00 ms    0.0%	0 s	 	                       -[_UINavigationBarVisualProviderModernIOS layoutSubviews]
+1.00 ms    0.0%	0 s	 	                        -[_UINavigationBarVisualProviderModernIOS _updateBackgrounds]
+1.00 ms    0.0%	0 s	 	                         -[_UINavigationBarVisualProviderModernIOS _updateShadowsForBarStyle:]
+1.00 ms    0.0%	1.00 ms	 	                          +[UIColor(UIColorSystemColorsPrivate) _barHairlineShadowColor]
+1.00 ms    0.0%	0 s	 	   -[WMFAppViewController showSplashView]
+1.00 ms    0.0%	0 s	 	    -[WMFAppViewController splashView]
+1.00 ms    0.0%	0 s	 	     +[UIImage imageNamed:]
+1.00 ms    0.0%	0 s	 	      +[UIImageAccessibility imageNamed:inBundle:compatibleWithTraitCollection:]
+1.00 ms    0.0%	0 s	 	       +[UIImage imageNamed:inBundle:compatibleWithTraitCollection:]
+1.00 ms    0.0%	0 s	 	        -[_UIAssetManager imageNamed:withTrait:]
+1.00 ms    0.0%	0 s	 	         -[_UIAssetManager imageNamed:scale:gamut:layoutDirection:idiom:userInterfaceStyle:subtype:cachingOptions:sizeClassPair:attachCatalogImage:]
+1.00 ms    0.0%	0 s	 	          __139-[_UIAssetManager imageNamed:scale:gamut:layoutDirection:idiom:userInterfaceStyle:subtype:cachingOptions:sizeClassPair:attachCatalogImage:]_block_invoke
+1.00 ms    0.0%	0 s	 	           -[CUICatalog namedLookupWithName:scaleFactor:deviceIdiom:deviceSubtype:displayGamut:layoutDirection:sizeClassHorizontal:sizeClassVertical:]
+1.00 ms    0.0%	0 s	 	            -[CUICatalog _namedLookupWithName:scaleFactor:deviceIdiom:deviceSubtype:displayGamut:layoutDirection:sizeClassHorizontal:sizeClassVertical:]
+1.00 ms    0.0%	0 s	 	             -[CUICatalog _resolvedRenditionKeyForName:scaleFactor:deviceIdiom:deviceSubtype:displayGamut:layoutDirection:sizeClassHorizontal:sizeClassVertical:memoryClass:graphicsClass:appearanceIdentifier:graphicsFallBackOrder:deviceSubtypeFallBackOrder:withBaseKeySelector:]
+1.00 ms    0.0%	0 s	 	              -[CUICatalog _resolvedRenditionKeyFromThemeRef:withBaseKey:scaleFactor:deviceIdiom:deviceSubtype:displayGamut:layoutDirection:sizeClassHorizontal:sizeClassVertical:memoryClass:graphicsClass:graphicsFallBackOrder:deviceSubtypeFallBackOrder:iconSizeIndex:appearanceIdentifier:]
+1.00 ms    0.0%	1.00 ms	 	               CUIRenditionKeySetValueForAttribute
+4.00 ms    0.3%	0 s	 	  @objc static NSUserDefaults.wmf_migrateToWMFGroupUserDefaultsIfNecessary()
+4.00 ms    0.3%	0 s	 	   static NSUserDefaults.wmf_migrateToWMFGroupUserDefaultsIfNecessary()
+3.00 ms    0.2%	0 s	 	    specialized static NSUserDefaults.wmf_migrateToWMFGroupUserDefaultsIfNecessary()
+2.00 ms    0.1%	0 s	 	     static Dictionary._unconditionallyBridgeFromObjectiveC(_:)
+2.00 ms    0.1%	0 s	 	      static Dictionary._forceBridgeFromObjectiveC(_:result:)
+1.00 ms    0.0%	0 s	 	       _objc_msgSend_uncached
+1.00 ms    0.0%	0 s	 	        lookUpImpOrForward
+1.00 ms    0.0%	1.00 ms	 	         os_unfair_lock_lock_with_options
+1.00 ms    0.0%	0 s	 	       __NSDictionaryEnumerate
+1.00 ms    0.0%	0 s	 	        CFBasicHashApply
+1.00 ms    0.0%	0 s	 	         ____NSDictionaryEnumerate_block_invoke.13
+1.00 ms    0.0%	0 s	 	          thunk for @escaping @callee_guaranteed (@in_guaranteed Any, @in_guaranteed Any, @unowned UnsafeMutablePointer<ObjCBool>) -> ()
+1.00 ms    0.0%	0 s	 	           thunk for @callee_guaranteed (@in_guaranteed Any, @in_guaranteed Any, @unowned UnsafeMutablePointer<ObjCBool>) -> ()partial apply
+1.00 ms    0.0%	0 s	 	            thunk for @callee_guaranteed (@in_guaranteed Any, @in_guaranteed Any, @unowned UnsafeMutablePointer<ObjCBool>) -> ()partial apply
+1.00 ms    0.0%	0 s	 	             partial apply for closure #1 in static Dictionary._forceBridgeFromObjectiveC(_:result:)
+1.00 ms    0.0%	0 s	 	              closure #1 in static Dictionary._forceBridgeFromObjectiveC(_:result:)
+1.00 ms    0.0%	0 s	 	               outlined destroy of C.EncodedScalar?
+1.00 ms    0.0%	1.00 ms	 	                destroy for String
+1.00 ms    0.0%	0 s	 	     -[NSUserDefaults(NSUserDefaults) boolForKey:]
+1.00 ms    0.0%	0 s	 	      _CFPreferencesGetAppBooleanValueWithContainer
+1.00 ms    0.0%	0 s	 	       -[_CFXPreferences copyAppValueForKey:identifier:container:configurationURL:]
+1.00 ms    0.0%	0 s	 	        -[_CFXPreferences(SearchListAdditions) withSearchListForIdentifier:container:cloudConfigurationURL:perform:]
+1.00 ms    0.0%	0 s	 	         normalizeQuintuplet
+1.00 ms    0.0%	0 s	 	          __108-[_CFXPreferences(SearchListAdditions) withSearchListForIdentifier:container:cloudConfigurationURL:perform:]_block_invoke
+1.00 ms    0.0%	0 s	 	           __76-[_CFXPreferences copyAppValueForKey:identifier:container:configurationURL:]_block_invoke
+1.00 ms    0.0%	0 s	 	            -[CFPrefsSource copyValueForKey:]
+1.00 ms    0.0%	0 s	 	             -[CFPrefsSearchListSource alreadylocked_copyValueForKey:]
+1.00 ms    0.0%	0 s	 	              -[CFPrefsSearchListSource alreadylocked_getDictionary:]
+1.00 ms    0.0%	0 s	 	               -[CFPrefsSearchListSource alreadylocked_generationCountFromListOfSources:count:]
+1.00 ms    0.0%	0 s	 	                CFPREFERENCES_IS_WAITING_FOR_SYSTEM_CFPREFSD
+1.00 ms    0.0%	0 s	 	                 __80-[CFPrefsSearchListSource alreadylocked_generationCountFromListOfSources:count:]_block_invoke
+1.00 ms    0.0%	0 s	 	                  -[_CFXPreferences withConnectionForRole:performBlock:]
+1.00 ms    0.0%	0 s	 	                   __80-[CFPrefsSearchListSource alreadylocked_generationCountFromListOfSources:count:]_block_invoke_2
+1.00 ms    0.0%	0 s	 	                    xpc_connection_send_message_with_reply_sync
+1.00 ms    0.0%	0 s	 	                     dispatch_mach_send_with_result_and_wait_for_reply
+1.00 ms    0.0%	0 s	 	                      _dispatch_mach_send_and_wait_for_reply
+1.00 ms    0.0%	0 s	 	                       _dispatch_mach_send_msg
+1.00 ms    0.0%	0 s	 	                        _dispatch_mach_send_drain
+1.00 ms    0.0%	0 s	 	                         _dispatch_mach_msg_send
+1.00 ms    0.0%	0 s	 	                          mach_msg
+1.00 ms    0.0%	1.00 ms	 	                           mach_msg_trap
+1.00 ms    0.0%	1.00 ms	 	    outlined init with take of Any?
+2.00 ms    0.1%	0 s	 	  -[AppDelegate updateDynamicIconShortcutItems]
+2.00 ms    0.1%	0 s	 	   -[UIApplication setShortcutItems:]
+1.00 ms    0.0%	0 s	 	    -[SBSApplicationShortcutService updateDynamicApplicationShortcutItems:forBundleIdentifier:]
+1.00 ms    0.0%	1.00 ms	 	     -[SBSApplicationClient updateDynamicApplicationShortcutItems:bundleIdentifier:]
+1.00 ms    0.0%	0 s	 	    initSBSApplicationShortcutService
+1.00 ms    0.0%	0 s	 	     look_up_class
+1.00 ms    0.0%	0 s	 	      getClassExceptSomeSwift(char const*)
+1.00 ms    0.0%	0 s	 	       getClass_impl(char const*)
+1.00 ms    0.0%	0 s	 	        NXMapGet
+1.00 ms    0.0%	1.00 ms	 	         _mapStrIsEqual(_NXMapTable*, void const*, void const*)
+
+
