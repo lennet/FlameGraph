@@ -62,16 +62,16 @@ class ImageRenderer {
 }
 
 extension NSImage {
-    func write(to _: URL) throws {
+    func write(to url: URL) throws {
         enum WriteImageError: Error {
             case dataConversionFailed
         }
 
-        guard let tiffRepresentation = image.tiffRepresentation,
+        guard let tiffRepresentation = tiffRepresentation,
             let bitmapImage = NSBitmapImageRep(data: tiffRepresentation) else {
             throw WriteImageError.dataConversionFailed
         }
         let imageData = bitmapImage.representation(using: .png, properties: [:])
-        try imageData?.write(to: URL(fileURLWithPath: CommandLine.arguments[2]))
+        try imageData?.write(to: url)
     }
 }
