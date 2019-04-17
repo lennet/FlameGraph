@@ -33,17 +33,27 @@ class ImageRenderer {
             colors.randomElement()?.setFill()
             context.fill(rect)
 
-            let attributes: [NSAttributedString.Key: Any] = [.foregroundColor: NSColor.white]
-            let string = NSString(string: "\(node.symbol.name), \(node.symbol.weight)")
-            var stringSize = string.size(withAttributes: attributes)
-            stringSize.height = min(rect.height, stringSize.height)
-            let stringRect = NSRect(x: rect.origin.x, y: rect.origin.y + (rect.height - stringSize.height) / 2,
-                                    width: rect.width, height: stringSize.height)
-            string.draw(in: stringRect, withAttributes: attributes)
+            render(text: "\(node.symbol.name), \(node.symbol.weight)", in: rect)
 
-            renderLayer(nodes: node.subNodes, context: context, totalWidth: currentWidth, y: y + height + ySpacing, x: currentX, maxPercentage: maxPercentage, height: height)
+            renderLayer(nodes: node.subNodes, context: context, totalWidth: currentWidth, parentWidth: parentWidth, y: y + height + ySpacing, x: currentX, maxPercentage: maxPercentage, height: height)
             currentX = rect.maxX + xSpacing
         }
+    }
+
+    private class func render(text: String, in rect: CGRect) {
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineBreakMode = .byCharWrapping
+        let attributes: [NSAttributedString.Key: Any] = [.foregroundColor: NSColor.white,
+                                                         .paragraphStyle: paragraphStyle]
+        let options: NSString.DrawingOptions = [.usesFontLeading, .usesLineFragmentOrigin]
+
+        let string = NSString(string: text)
+        var stringSize = string.boundingRect(with: rect.size, options: options, attributes: attributes).size
+        stringSize.height = min(rect.height, stringSize.height)
+        let stringRect = NSRect(x: rect.origin.x, y: rect.origin.y + (rect.height - stringSize.height) / 2,
+                                width: rect.width, height: stringSize.height)
+
+        string.draw(with: stringRect, options: options, attributes: attributes)
     }
 }
 
