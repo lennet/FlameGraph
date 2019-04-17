@@ -33,7 +33,14 @@ class ImageRenderer {
             colors.randomElement()?.setFill()
             context.fill(rect)
 
-            NSString(string: "\(node.symbol.name), \(node.symbol.weight)").draw(in: rect, withAttributes: [.foregroundColor: NSColor.white])
+            let attributes: [NSAttributedString.Key: Any] = [.foregroundColor: NSColor.white]
+            let string = NSString(string: "\(node.symbol.name), \(node.symbol.weight)")
+            var stringSize = string.size(withAttributes: attributes)
+            stringSize.height = min(rect.height, stringSize.height)
+            let stringRect = NSRect(x: rect.origin.x, y: rect.origin.y + (rect.height - stringSize.height) / 2,
+                                    width: rect.width, height: stringSize.height)
+            string.draw(in: stringRect, withAttributes: attributes)
+
             renderLayer(nodes: node.subNodes, context: context, totalWidth: currentWidth, y: y + height + ySpacing, x: currentX, maxPercentage: maxPercentage, height: height)
             currentX = rect.maxX + xSpacing
         }
