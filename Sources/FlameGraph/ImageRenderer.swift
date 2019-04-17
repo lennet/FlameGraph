@@ -39,7 +39,7 @@ class ImageRenderer {
 
             render(text: "\(node.symbol.name), \(node.symbol.weight)", in: rect)
 
-            renderLayer(nodes: node.subNodes, context: context, totalWidth: currentWidth, parentWidth: parentWidth, y: y + height + ySpacing, x: currentX, maxPercentage: maxPercentage, height: height)
+            renderLayer(nodes: node.subNodes, context: context, totalWidth: currentWidth, parentWidth: parentWidth, y: y + height + ySpacing, x: currentX, maxPercentage: node.symbol.percentage, height: height)
             currentX = rect.maxX + xSpacing
         }
     }
