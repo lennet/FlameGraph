@@ -12,7 +12,7 @@ An example FlameGraph for the ```-[AppDelegate application:didFinishLaunchingWit
 
 ### [Mint](https://github.com/yonaskolb/mint)
 ```
-$ mint install github_name/repo_name
+$ mint install lennet/FlameGraph
 ```
 
 ### Swift Package Manager
