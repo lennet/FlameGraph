@@ -14,9 +14,9 @@ class FlameGraphCommand: Command {
     func run(outputStream: inout TextOutputStream, errorStream _: inout TextOutputStream) throws {
         let content: String
         let fromFile = !filePath.value.isEmpty
-
         if fromFile {
             do {
+                outputStream.write("📂 Load trace copy\n")
                 content = try String(contentsOfFile: filePath.value)
             } catch {
                 throw LoadFileError(path: filePath.value)
@@ -27,6 +27,7 @@ class FlameGraphCommand: Command {
             throw MissingInputError.missingInputOrPasteboard
         }
 
+        outputStream.write("🔎 Parse trace copy\n")
         guard let callGraph = TraceParser.parse(content: content) else {
             if fromFile {
                 throw ParsingFailedError(path: filePath.value)
@@ -35,15 +36,17 @@ class FlameGraphCommand: Command {
             }
         }
 
+        outputStream.write("🔨 Generate Output\n")
         let image = ImageRenderer.render(graph: callGraph)
 
+        outputStream.write("💾 Save Output\n")
         do {
             try image.write(to: URL(fileURLWithPath: outputPath.value))
         } catch {
             throw SaveFileError(path: outputPath.value)
         }
 
-        outputStream.write("")
+        outputStream.write("🔥 Successfully saved Output to \(String(describing: outputPath.value!))\n")
     }
 }
 
