@@ -7,7 +7,7 @@ class ImageRenderer {
         return NSImage(size: NSSize(width: 1000, height: maxDepth * cellHeight), flipped: false) { (rect) -> Bool in
             let context = NSGraphicsContext.current!.cgContext
 
-            renderLayer(nodes: graph.subNodes, context: context, totalWidth: rect.width, parentWidth: rect.width, y: 0, x: 0, maxPercentage: graph.symbol.percentage, height: cellHeight)
+            renderLayer(nodes: [graph], context: context, totalWidth: rect.width, parentWidth: rect.width, y: 0, x: 0, maxPercentage: graph.symbol.percentage, height: cellHeight)
             return true
         }
     }
