@@ -8,10 +8,13 @@ let package = Package(
     products: [
         .executable(name: "FlameGraph", targets: ["FlameGraph"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/hartbit/Yaap.git", .branch("master")),
+    ],
     targets: [
         .target(
             name: "FlameGraph",
-            dependencies: []
+            dependencies: ["Yaap"]
         ),
         .testTarget(
             name: "FlameGraphTests",

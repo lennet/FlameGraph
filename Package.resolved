@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Yaap",
+        "repositoryURL": "https://github.com/hartbit/Yaap.git",
+        "state": {
+          "branch": "master",
+          "revision": "7e205f99ad86ac5eac50253d2d5848cf7c9c579a",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
