@@ -8,6 +8,8 @@ class FlameGraphCommand: Command {
 
     let outputPath = Argument<String>(documentation: "The path where the image should be saves")
     let filePath = Option<String>(shorthand: "f", defaultValue: "", documentation: "The path of a txt that contains the trace copy")
+    let silent = Option<Bool>(shorthand: "s", defaultValue: false, documentation: "Don't open the file after generation")
+
     let help = Help()
     let version = Version("0.1.1")
 
@@ -47,6 +49,9 @@ class FlameGraphCommand: Command {
         }
 
         outputStream.write("🔥 Successfully saved Output to \(String(describing: outputPath.value!))\n")
+        if silent.value == false {
+            NSWorkspace.shared.openFile(outputPath.value)
+        }
     }
 }
 
