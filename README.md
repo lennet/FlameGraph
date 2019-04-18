@@ -26,6 +26,5 @@ $ swift run FlameGraph <args>
 
 1. Run Time Profiler in Instruments
 2. Select Thread and region you are interested in
-3. Edit > Deep copy
-4. Save copied content to a file 
-5. ```$ FlameGraph <Input path> <OutputPath.png>```
+3. Edit > Deep copy ⇧⌘C
+4. ```$ FlameGraph <OutputPath.png>```
