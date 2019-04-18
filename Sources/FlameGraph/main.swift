@@ -11,7 +11,7 @@ class FlameGraphCommand: Command {
     let silent = Option<Bool>(shorthand: "s", defaultValue: false, documentation: "Don't open the file after generation")
 
     let help = Help()
-    let version = Version("0.1.1")
+    let version = Version("0.1.2")
 
     func run(outputStream: inout TextOutputStream, errorStream _: inout TextOutputStream) throws {
         let content: String
