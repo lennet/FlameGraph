@@ -1,7 +1,7 @@
 import Cocoa
 
-class ImageRenderer {
-    class func render(graph: CallGraphNode) -> NSImage {
+public class ImageRenderer {
+    public class func render(graph: CallGraphNode) -> NSImage {
         let maxDepth = CGFloat(graph.maxDepth)
         let cellHeight: CGFloat = 40
         return NSImage(size: NSSize(width: 1000, height: maxDepth * cellHeight), flipped: false) { (rect) -> Bool in
@@ -61,7 +61,7 @@ class ImageRenderer {
     }
 }
 
-extension NSImage {
+public extension NSImage {
     func write(to url: URL) throws {
         enum WriteImageError: Error {
             case dataConversionFailed

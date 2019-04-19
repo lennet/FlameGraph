@@ -1,6 +1,6 @@
 import Foundation
 
-class CallGraphNode {
+public class CallGraphNode {
     var symbol: Symbol
     var subNodes: [CallGraphNode] = []
     var parentNode: CallGraphNode?

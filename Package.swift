@@ -7,6 +7,7 @@ let package = Package(
     name: "FlameGraph",
     products: [
         .executable(name: "FlameGraph", targets: ["FlameGraph"]),
+        .library(name: "FlameGraphCore", targets: ["FlameGraphCore"]),
     ],
     dependencies: [
         .package(url: "https://github.com/hartbit/Yaap.git", .branch("master")),
@@ -14,11 +15,19 @@ let package = Package(
     targets: [
         .target(
             name: "FlameGraph",
-            dependencies: ["Yaap"]
+            dependencies: ["Yaap", "FlameGraphCore"]
+        ),
+        .target(
+            name: "FlameGraphCore",
+            dependencies: []
         ),
         .testTarget(
             name: "FlameGraphTests",
             dependencies: ["FlameGraph"]
+        ),
+        .testTarget(
+            name: "FlameGraphCoreTests",
+            dependencies: ["FlameGraphCore"]
         ),
     ]
 )

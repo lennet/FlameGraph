@@ -1,14 +1,14 @@
 import Foundation
 
-struct Symbol {
-    let weight: String
-    let selfWeight: String
-    let name: String
-    let depthLevel: Int
-    let percentage: Float
+public struct Symbol: Equatable {
+    public let weight: String
+    public let selfWeight: String
+    public let name: String
+    public let depthLevel: Int
+    public let percentage: Float
 }
 
-extension Symbol {
+public extension Symbol {
     init(weight: String, selfWeight: String, symbolName: String) {
         let weightComponent = weight.split(separator: Character(" "))
         self.weight = weightComponent[0 ..< weightComponent.count - 1].joined()

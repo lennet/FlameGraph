@@ -1,4 +1,5 @@
 import AppKit
+import FlameGraphCore
 import Foundation
 import Yaap
 
