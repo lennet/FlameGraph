@@ -1,4 +1,13 @@
 # FlameGraph
+<p align="center">
+    <a href="https://travis-ci.org/lennet/FlameGraph">
+        <img src="https://travis-ci.org/lennet/FlameGraph.svg?branch=master" alt="Travis status"/>
+    </a>
+    <img src="https://img.shields.io/badge/Swift-5.0-orange.svg" />
+    <a href="https://swift.org/package-manager">
+        <img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
+    </a>
+</p>
 
 Work in Progress 
 
