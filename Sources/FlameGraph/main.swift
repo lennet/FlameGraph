@@ -13,7 +13,7 @@ class FlameGraphCommand: Command {
     let png = Option<Bool>(shorthand: "p", defaultValue: false, documentation: "Save FlameGraph as PNG")
 
     let help = Help()
-    let version = Version("0.1.2")
+    let version = Version("0.1.3")
 
     func run(outputStream: inout TextOutputStream, errorStream _: inout TextOutputStream) throws {
         let content: String
