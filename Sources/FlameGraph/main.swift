@@ -11,6 +11,7 @@ class FlameGraphCommand: Command {
     let filePath = Option<String>(shorthand: "f", defaultValue: "", documentation: "The path of a txt that contains the trace copy")
     let silent = Option<Bool>(shorthand: "s", defaultValue: false, documentation: "Don't open the file after generation")
     let png = Option<Bool>(shorthand: "p", defaultValue: false, documentation: "Save FlameGraph as PNG")
+    let html = Option<Bool>(shorthand: "h", defaultValue: false, documentation: "Save FlameGraph as HTML")
 
     let help = Help()
     let version = Version("0.1.3")
@@ -41,7 +42,16 @@ class FlameGraphCommand: Command {
         }
 
         outputStream.write("🔨 Generate Output\n")
-        let output: RenderTarget = png.value ? ImageRenderer.render(graph: callGraph) : PDFRenderer.render(graph: callGraph)
+
+        let output: RenderTarget
+        switch (html.value, png.value) {
+        case (true, _):
+            output = HTMLRenderer.render(graph: callGraph)
+        case (_, true):
+            output = ImageRenderer.render(graph: callGraph)
+        default:
+            output = PDFRenderer.render(graph: callGraph)
+        }
 
         outputStream.write("💾 Save Output\n")
         do {
