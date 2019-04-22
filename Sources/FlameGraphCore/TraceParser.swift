@@ -10,12 +10,12 @@ public class TraceParser {
             }
             return components
         }
-        
+
         return components.map {
             Symbol(weight: String($0[0]), selfWeight: String($0[1]), symbolName: String($0[3]))
         }
     }
-    
+
     public class func parse(content: String) -> CallGraphNode? {
         let symbols: [Symbol] = parse(content: content)
         return buildTree(with: symbols)
