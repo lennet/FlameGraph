@@ -10,6 +10,7 @@ class FlameGraphCommand: Command {
     let outputPath = Argument<String>(documentation: "The path where the image should be saves")
     let filePath = Option<String>(shorthand: "f", defaultValue: "", documentation: "The path of a txt that contains the trace copy")
     let silent = Option<Bool>(shorthand: "s", defaultValue: false, documentation: "Don't open the file after generation")
+    let png = Option<Bool>(shorthand: "p", defaultValue: false, documentation: "Save FlameGraph as PNG")
 
     let help = Help()
     let version = Version("0.1.2")
@@ -40,11 +41,11 @@ class FlameGraphCommand: Command {
         }
 
         outputStream.write("🔨 Generate Output\n")
-        let image = ImageRenderer.render(graph: callGraph)
+        let output: RenderTarget = png.value ? ImageRenderer.render(graph: callGraph) : PDFRenderer.render(graph: callGraph)
 
         outputStream.write("💾 Save Output\n")
         do {
-            try image.write(to: URL(fileURLWithPath: outputPath.value))
+            try output.write(to: URL(fileURLWithPath: outputPath.value))
         } catch {
             throw SaveFileError(path: outputPath.value)
         }

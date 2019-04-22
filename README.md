@@ -36,4 +36,4 @@ $ swift run FlameGraph <args>
 1. Run Time Profiler in Instruments
 2. Select Thread and region you are interested in
 3. Edit > Deep copy ⇧⌘C
-4. ```$ FlameGraph <OutputPath.png>```
+4. ```$ FlameGraph <OutputPath.pdf>```
