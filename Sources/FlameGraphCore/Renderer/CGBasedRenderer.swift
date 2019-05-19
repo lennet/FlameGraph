@@ -10,7 +10,7 @@
             var currentX: CGFloat = x
             for node in nodes {
                 var currentWidth = totalWidth * CGFloat(node.symbol.percentage / maxPercentage)
-                if currentWidth < 1 {
+                if currentWidth < 1 || currentWidth.isNaN {
                     currentWidth = min(parentWidth / CGFloat(node.parentNode?.subNodes.count ?? 1), 1)
                 }
 
