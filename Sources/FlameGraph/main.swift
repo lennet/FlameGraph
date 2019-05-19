@@ -14,7 +14,7 @@ class FlameGraphCommand: Command {
     let html = Option<Bool>(shorthand: "h", defaultValue: false, documentation: "Save FlameGraph as HTML")
 
     let help = Help()
-    let version = Version("0.1.4")
+    let version = Version("0.1.4.1")
 
     func run(outputStream: inout TextOutputStream, errorStream _: inout TextOutputStream) throws {
         let content: String
